@@ -30,6 +30,11 @@ body{
     color: #2D3440;
 }
 
+.container{
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
 .header__menu-item{
     list-style-type: none;
     margin-left: 0;
@@ -154,6 +159,11 @@ body{
     padding-left: 0;
 }
 
+.banners__discount li{
+    background-color: #FF7799;
+    border-radius: 16px;
+}
+
 .banners__discount-title{
     font-weight: 700;
     font-size: 24px;
@@ -170,6 +180,11 @@ body{
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
+}
+
+.products__catalog li{
+    background: #FCFCFC;
+    border-radius: 8px;
 }
 
 .products__catalog-image{
@@ -200,6 +215,11 @@ body{
     border-radius: 26px;
 }
 
+.about__container{
+    background-color: #FFFFFF;;
+    border-radius: 16px;
+}
+
 .about__title{
     font-weight: 900;
     font-size: 32px;
@@ -210,6 +230,12 @@ body{
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
+}
+
+.news{
+    background-image: url(../images/news.jpg);
+    background-repeat: no-repeat;
+    border-radius: 16px;
 }
 
 .news__title a{
@@ -225,12 +251,32 @@ body{
     color: #565C66;
 }
 
+.mail{
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.frame{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
 .mail__subtitle{
     color: #565C66;
 }
 
 .mail__input{
     line-height: 20px;
+}
+
+.delivery{
+    background-image: url(../images/delivery.jpg);
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    border-radius: 16px;
 }
 
 .delivery__title{
@@ -241,6 +287,11 @@ body{
 
 .delivery__subtitle{
     color: #565C66;
+}
+
+.delivery__form{
+    background-color: #FCFCFC;
+    border-radius: 8px;
 }
 
 .delivery__form-information{
@@ -254,6 +305,20 @@ body{
 
 .delivery__form-order input{
     line-height: 20px;
+}
+
+.contacts{
+    background-image: url(../images/feedback.jpg);
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+.contacts__container{
+    background-color: #FCFCFC;
+    border-radius: 8px;
+
+    width: 343px;
+    height: 364px;
 }
 
 .contacts__address-information p{
@@ -309,4 +374,20 @@ body{
     height: 14px;
     background-repeat: no-repeat;
     margin-left: -19px;
+}
+
+.footer{
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.logo p{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.html-academy__link{
+    text-decoration: none;
+    border-bottom: 1px black solid;
+    color: #2D3440;
 }
