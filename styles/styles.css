@@ -39,7 +39,7 @@ body{
 
 .container{
     margin: 0 auto;
-    max-width: 1170px;
+    width: 1170px;
 }
 
 .header{
@@ -107,7 +107,11 @@ body{
 
 .slider{
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 58px;
+}
+
+.slider__ice{
+    margin-bottom: -19px;
 }
 
 .slider__information{
@@ -116,7 +120,7 @@ body{
 
 .slider__information-container{
     width: 470px;
-    margin-left: 70px;
+    margin-left: 71px;
     margin-top: 92px;
 }
 
@@ -130,6 +134,12 @@ body{
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 40px;
+}
+
+.slider__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .slider__social-icons{
@@ -204,6 +214,18 @@ body{
     font-size: 14px;
 }
 
+.slider__dots{
+    display: flex;
+}
+
+.dot{
+    width: 12px;
+    height: 12px;
+    background: #FCFCFC;
+    border-radius: 100px;
+    margin-right: 8px;
+}
+
 .social-icons{
     list-style-type: none;
     margin-left: 0;
@@ -211,7 +233,7 @@ body{
 }
 
 .banners{
-    margin-bottom: 81px;
+    margin-bottom: 75px;
 }
 
 .banners__title{
@@ -221,20 +243,22 @@ body{
     width: 434px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
 }
 
 .banners__discount{
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
 .banners__discount-container{
     padding-top: 36px;
     padding-left: 36px;
+    padding-bottom: 28px;
 }
 
 .banners__discount li{
@@ -254,11 +278,11 @@ body{
 
 .banners__discount-subtitle{
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 22px;
 }
 
 .products{
-    margin-bottom: 80px;
+    margin-bottom: 84px;
 }
 
 .products__title{
@@ -268,15 +292,16 @@ body{
     margin: 0 auto;
     width: 527px;
     text-align: center;
-    margin-bottom: 98px;
+    margin-bottom: 104px;
 }
 
 .products__catalog{
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
     text-align: center;
 }
 
@@ -288,7 +313,9 @@ body{
 
 .products__catalog-image{
     border-radius: 100px;
-    margin-top: -44px;
+    margin-top: -51px;
+    width: 185px;
+    height: 185px;
 }
 
 .products__catalog-title{
@@ -297,11 +324,13 @@ body{
     line-height: 24px;
     margin: 0;
     margin-bottom: 8px;
+    margin-top: -10px;
 }
 
 .products__catalog-subtitle{
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    padding: 0 40px;
 }
 
 .products__catalog-items{
@@ -310,6 +339,7 @@ body{
     width: 190px;
     margin: 0 auto;
     margin-bottom: 18px;
+    align-items: center;
 }
 
 .products__catalog-price{
@@ -343,7 +373,7 @@ body{
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
-    padding-top: 80px;
+    padding: 80px 63.5px 0 63.5px;
     text-align: center;
 }
 
@@ -352,9 +382,9 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 32px;
+    gap: 39px 24px;
     padding: 25px 63px;
-    font-size: 13px;
+    font-size: 16px;
     padding-bottom: 78px;
 }
 
@@ -387,6 +417,8 @@ body{
     background-image: url(../images/news.jpg);
     background-repeat: no-repeat;
     border-radius: 16px;
+    background-size: cover;
+    background-color: #fff;
 }
 
 .news__container{
@@ -395,6 +427,12 @@ body{
     padding-bottom: 61px;
     display: flex;
     flex-direction: column;
+}
+
+.news__container p{
+    margin: 0;
+    margin-top: 14px;
+    margin-bottom: 12px;
 }
 
 .news__title{
@@ -426,18 +464,18 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 76px;
+    margin-right: 15px;
 }
 
 .mail__container{
-    padding: 33px 21px;
+    padding: 31px 24px 32px 28px;
 }
 
 .mail__subtitle{
     color: #565C66;
-    font-size: 13px;
     margin: 0;
-    margin-bottom: 36px;
+    margin-bottom: 40px;
 }
 
 .mail__input{
@@ -447,6 +485,7 @@ body{
     margin-right: 8px;
     border: 1px solid #B9B9B9;
     padding-left: 17px;
+    font-size: 17px;
 }
 
 .delivery{
@@ -456,6 +495,8 @@ body{
     grid-template-columns: 1fr 635px;
     border-radius: 16px;
     margin-bottom: 80px;
+    background-size: cover;
+    background-color: #fff;
 }
 
 .delivery__container{
@@ -474,13 +515,14 @@ body{
 }
 
 .delivery__form-container{
-    padding: 64px;
+    padding: 65px 63px 62px 64px;
 }
 
 .delivery__form{
     background-color: #FCFCFC;
     border-radius: 8px;
-    padding: 36px;
+    padding: 37px;
+    margin-right: 16px;
 }
 
 .delivery__form-information{
@@ -491,9 +533,9 @@ body{
 
 .delivery__form-order-container{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 16px;
-    margin-bottom: 32px;
+    grid-template-columns: 117px 1fr;
+    gap: 22px 14px;
+    margin-bottom: 31px;
 }
 
 .delivery__form-order-container p{
@@ -550,6 +592,7 @@ body{
 
 .delivery__form-order input{
     line-height: 20px;
+    font-size: 16px;
 }
 
 .delivery__form-button{
@@ -578,7 +621,7 @@ body{
 .contacts__address-information-title{
     color: #565C66;
     margin: 0;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
 }
 
 .contacts__address-information h2{
@@ -617,6 +660,10 @@ body{
     line-height: 20px;
 }
 
+.information{
+    padding-left: 100px;
+}
+
 .information ul {
     list-style-type: none;
     margin-left: 0;
@@ -653,6 +700,7 @@ body{
 .footer__container{
     display: flex;
     justify-content: space-between;
+    padding-left: 12px;
 }
 
 .footer__social-icons{
@@ -667,6 +715,7 @@ body{
 
 .html-academy{
     margin-top: 16px;
+    margin-right: 33px;
 }
 
 .html-academy__link{
@@ -695,7 +744,9 @@ body{
 .inner-header{
     display: flex;
     flex-direction: column;
-    margin-bottom: 61px;
+    margin-bottom: 64px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 
@@ -808,7 +859,14 @@ body{
 }
 
 .visually-hidden{
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .visually-none{
@@ -821,6 +879,12 @@ body{
     display: grid;
     gap: 37px 0;
     width: 787px;
+}
+
+.catalog-products__sorting-list{
+    background-color: transparent;
+    border: none;
+    color: #2D3440;
 }
 
 .catalog-products__sorting-filter{
@@ -898,6 +962,7 @@ fieldset{
     color: #565C66;
     margin: 0;
     margin-bottom: 20px;
+    padding: 0 40px;
 }
 
 .catalog-products__card-price{
