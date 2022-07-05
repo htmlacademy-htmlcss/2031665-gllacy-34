@@ -212,6 +212,7 @@ body{
     background-color: rgba(252, 252, 252, 0.3);
     color: #2D3440;
     font-size: 14px;
+    margin-left: -19px;
 }
 
 .slider__dots{
@@ -338,7 +339,7 @@ body{
     justify-content: space-between;
     width: 190px;
     margin: 0 auto;
-    margin-bottom: 18px;
+    margin-bottom: 23px;
     align-items: center;
 }
 
@@ -877,8 +878,9 @@ body{
     font-size: 14px;
     line-height: 20px;
     display: grid;
-    gap: 37px 0;
     width: 787px;
+    grid-template-columns: 196px 196px 175px;
+    gap: 44px 24px;
 }
 
 .catalog-products__sorting-list{
@@ -887,19 +889,10 @@ body{
     color: #2D3440;
 }
 
-.catalog-products__sorting-filter{
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.catalog-products__price-filter{
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
 .catalog-products__form-radio{
     grid-column-start: 3;
     grid-column-end: 5;
+    margin-right: -15px;
 }
 
 .catalog-products__form-radio-list{
@@ -913,6 +906,9 @@ body{
 .catalog-products__form-checkbox{
     grid-column-start: 1;
     grid-column-end: 4;
+    align-self: center;
+    padding: 9px;
+    margin-right: 11px;
 }
 
 .catalog-products__form-checkbox-list{
@@ -943,7 +939,7 @@ fieldset{
 }
 
 .catalog-products__card{
-    margin-top: 85px;
+    margin: 79px 10px -7px 0;
 }
 
 .catalog-products__card-link{
@@ -956,12 +952,13 @@ fieldset{
     line-height: 24px;
     color: #2D3440;
     margin: 0;
+    padding-bottom: 8px;
 }
 
 .catalog-products__card-subtitle{
     color: #565C66;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     padding: 0 40px;
 }
 
@@ -972,18 +969,27 @@ fieldset{
     color: #2D3440;
 }
 
+.catalog-products__card-image{
+    margin-bottom: -6px;
+}
+
 .pagination__container{
     display: flex;
     justify-content: end;
-    margin-top: 38px;
-    margin-bottom: 98px;
+    margin: 57px -27px 111px 0;
 }
 
 .pagination{
     list-style-type: none;
     margin-left: 353px;
+    margin-top: 18px;
+    margin-right: 32px;
     padding-left: 0;
     display: flex;
+}
+
+.pagination-item{
+    margin-left: -6px;
 }
 
 .pagination-link{
