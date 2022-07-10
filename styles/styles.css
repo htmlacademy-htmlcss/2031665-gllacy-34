@@ -65,16 +65,13 @@ body{
 
 .header__menu-item{
     list-style-type: none;
-    padding-right: 32px;
 }
 
 .header__menu-item a:hover{
-    padding: 8px 16px;
     background-color: rgba(252, 252, 252, 0.5);
     border-radius: 30px;
     display: block;
     margin-top: -7px;
-    margin-right: 16px;
 }
 
 .header__menu-item a:active{
@@ -91,6 +88,9 @@ body{
     text-decoration: none;
     font-size: 16px;
     line-height: 20px;
+    padding: 8px 16px;
+    background-color: #FEAFC3;
+    border-radius: 30px;
 }
 
 .header__information{
@@ -871,16 +871,12 @@ body{
 }
 
 .header__menu-item_active{
-    background-color: #FF4A78;
-    border-radius: 30px;
     display: block;
-    padding: 8px 16px;
-    margin-top: -7px;
-    margin-right: 16px;
 }
 
 .header__menu-item_active a{
     color: #FCFCFC;
+    background-color: #FF4A78;
 }
 
 .header__menu-item:focus-within .subcatalog {
@@ -1055,6 +1051,9 @@ body{
     background-color: transparent;
     border: none;
     color: #2D3440;
+    vertical-align: sub;
+    margin-left: 3px;
+    font-size: 14px;
 }
 
 .catalog-products__form-radio{
@@ -1132,6 +1131,31 @@ body{
 
 .control-input[type="checkbox"]:checked + .control-mark::after {
     transform: rotate(-45deg);
+}
+
+.control-input[type="radio"] + .control-mark {
+    border-radius: 50%;
+}
+
+.catalog-products__form-radio-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    background-color: #242424;
+    border-radius: 50%;
+    content: "";
+}
+
+.catalog-products__form-radio-item:not(:last-child) {
+    margin-right: 3px;
 }
 
 fieldset{
