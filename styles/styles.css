@@ -222,6 +222,23 @@ body{
     margin-right: 16px;
 }
 
+.social-icons-svg{
+    fill: #FCFCFC;
+}
+
+.social-icons-svg svg:hover{
+    background-color: #2D3440;
+    border-radius: 24px;
+}
+
+.social-icons-svg svg:focus{
+    border: 2px solid #2D3440;
+}
+
+.social-icons-svg svg:disabled{
+    opacity: 0.4;
+}
+
 .arrows{
     display: flex;
     position: absolute;
@@ -239,14 +256,7 @@ body{
     border-radius: 26px;
     margin-right: 270px;
     cursor: pointer;
-}
-
-.arrows__left-arrow:hover{
-    background-color: #FCFCFC;
-}
-
-.arrows__right-arrow:hover{
-    background-color: #FCFCFC;
+    fill: #FCFCFC;
 }
 
 .arrows__right-arrow{
@@ -263,6 +273,51 @@ body{
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
     cursor: pointer;
+    fill: #FCFCFC;
+}
+
+.arrows__left-arrow:hover{
+    background-color: #FCFCFC;
+    fill: #2D3440;
+}
+
+.arrows__right-arrow:hover{
+    background-color: #FCFCFC;
+    fill: #2D3440;
+}
+
+.arrows__left-arrow:active{
+    background-color: rgba(252, 252, 252, 0.5);
+    border: none;
+}
+
+.arrows__right-arrow:active{
+    background-color: rgba(252, 252, 252, 0.5);
+    border: none;
+}
+
+.arrows__left-arrow:focus{
+    background: rgba(252, 252, 252, 0.3);
+    border: 2px solid #2D3440;
+}
+
+.arrows__right-arrow:focus{
+    background: rgba(252, 252, 252, 0.3);
+    border: 2px solid #2D3440;
+}
+
+.arrows__left-arrow:disabled{
+    background: rgba(252, 252, 252, 0.3);
+    opacity: 0.4;
+    border: 2px solid #FCFCFC;
+    fill: #FCFCFC;
+}
+
+.arrows__right-arrow:disabled{
+    background: rgba(252, 252, 252, 0.3);
+    opacity: 0.4;
+    border: 2px solid #FCFCFC;
+    fill: #FCFCFC;
 }
 
 .button{
@@ -280,9 +335,56 @@ body{
     color: #2D3440;
 }
 
+.white-button:hover{
+    background: rgba(252, 252, 252, 0.4);
+    border: 4px solid #FCFCFC;
+    box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
+}
+
+.white-button:active{
+    background-color: #FCFCFC;
+    border: 2px solid #2D3440;
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.white-button:focus{
+    background: rgba(252, 252, 252, 0.5);
+    border: 2px solid #2D3440;
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.white-button:disabled{
+    background: #E7E7E7;
+    border: 4px solid rgba(252, 252, 252, 0.4);
+}
+
 .pink-button{
     border: 4px solid rgba(252, 252, 252, 0.4);
     background-color: #FF2F64;
+}
+
+.pink-button:hover{
+    background: rgba(252, 252, 252, 0.3);
+    border: 4px solid #FF2F64;
+    color: #2D3440;
+}
+
+.pink-button:active{
+    background: #FEAFC3;
+    border: 2px solid #2D3440;
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    color: #FCFCFC;
+}
+
+.pink-button:focus{
+    background: #FF2F64;
+    border: 2px solid #2D3440;
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.pink-button:disabled{
+    background: #B9B9B9;
+    border: 4px solid rgba(185, 185, 185, 0.3);
 }
 
 .transparent-button{
@@ -293,6 +395,26 @@ body{
     color: #2D3440;
     font-size: 14px;
     margin-left: -19px;
+}
+
+.transparent-button:hover{
+    background: #FCFCFC;
+    border: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.transparent-button:active{
+    background: rgba(252, 252, 252, 0.5);
+}
+
+.transparent-button:focus{
+    background: rgba(252, 252, 252, 0.3);
+    border: 2px solid #2D3440;
+}
+
+.transparent-button:disabled{
+    background: rgba(252, 252, 252, 0.3);
+    opacity: 0.4;
+    border: 2px solid #FCFCFC;
 }
 
 .slider__dots{
@@ -439,6 +561,7 @@ body{
     margin: 0 auto;
     margin-bottom: 23px;
     align-items: center;
+    position: relative;
 }
 
 .products__catalog-price{
@@ -448,7 +571,7 @@ body{
 }
 
 .products__catalog-trash{
-    background-image: url(../images/trash.svg);
+    position: absolute;
     display: block;
     background-color: #FF2F64;
     background-repeat: no-repeat;
@@ -457,6 +580,30 @@ body{
     padding: 8px;
     background-position: center;
     border-radius: 26px;
+    right: 0;
+    fill: #fff;
+}
+
+.products__catalog-trash:hover{
+    background: rgba(252, 252, 252, 0.3);
+    border: 2px solid #FF2F64;
+    fill: #000000;
+}
+
+.products__catalog-trash:active{
+    background: #FFCBD8;
+    border: 2px solid #FF2F64;
+}
+
+.products__catalog-trash:focus{
+    background: #FF2F64;
+    border: 2px solid #2D3440;
+    fill: #fff;
+}
+
+.products__catalog-trash:disabled{
+    background: #B9B9B9;
+    fill: #000000;
 }
 
 .about{
@@ -1056,6 +1203,20 @@ body{
     font-size: 14px;
 }
 
+.catalog-products__sorting-filter:hover{
+    background-color: rgba(252, 252, 252, 0.5);
+}
+
+.catalog-products__sorting-filter:focus{
+    background-color: rgba(252, 252, 252, 0.4);
+    border: 2px solid #fff;
+}
+
+.catalog-products__sorting-list:focus{
+    border: none;
+    outline: none;
+}
+
 .catalog-products__form-radio{
     grid-column: 3/5;
     margin-right: -15px;
@@ -1107,7 +1268,7 @@ body{
 }
 
 .control:hover .control-mark {
-    border-color: #814b18;
+    border-color: #fff;
 }
 
 .control-input:disabled + .control-mark {
@@ -1123,6 +1284,12 @@ body{
     width: 12px;
     height: 2px;
     background-color: #242424;
+}
+
+.control-input[type="checkbox"]:hover:checked + .control-mark:before,
+.control-input[type="checkbox"]:hover:checked + .control-mark:after {
+    content: "";
+    background-color: #fff;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -1151,6 +1318,11 @@ body{
     height: 6px;
     background-color: #242424;
     border-radius: 50%;
+    content: "";
+}
+
+.control-input[type="radio"]:hover:checked + .control-mark:before {
+    background-color: #fff;
     content: "";
 }
 
@@ -1228,7 +1400,24 @@ fieldset{
 }
 
 .pagination-item{
-    margin-left: -6px;
+    text-align: center;
+    display: block;
+}
+
+.pagination-item:hover{
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 50px;
+    background-position: center;
+}
+
+.pagination-item:active{
+    background: rgba(252, 252, 252, 0.5);
+    border: 1px solid #FCFCFC;
+}
+
+.pagination-item:focus{
+    background: rgba(252, 252, 252, 0.3);
+    border: 1px solid #2D3440;
 }
 
 .pagination-link{
