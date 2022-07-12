@@ -1490,9 +1490,6 @@ body{
     position: absolute;
     z-index: 1;
     box-sizing: border-box;
-    padding: 48px 48px 37px 48px;
-    right: 364px;
-    margin-top: 7px;
     color: #242424;
     background-color: #ffffff;
     min-height: 186px;
@@ -1500,8 +1497,37 @@ body{
     display: none;
 }
 
+.popover-cart {
+    width: 435px;
+    padding: 48px 48px 37px 48px;
+    right: 364px;
+    margin-top: 7px;
+}
+
+.popover-cart-empty{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    width: 305px;
+    right: 364px;
+    margin-top: 8px;
+    box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+    border-radius: 4px;
+}
+
+.popover-entry{
+    width: 418px;
+    padding: 44px 6px 19px 41px;
+    right: 495px;
+}
+
 .popover-content {
     height: 100%;
+}
+
+.popover-content-empty{
+    margin-top: 20%;
 }
 
 .popover-title {
@@ -1522,10 +1548,6 @@ body{
 .cart-item img{
     width: 46px;
     height: 46px;
-}
-
-.popover-cart {
-    width: 435px;
 }
 
 .cart-items-list{
@@ -1666,10 +1688,32 @@ body{
     margin-bottom: 16px;
 }
 
+.auth-form .field-group-entry{
+    margin-bottom: 2px;
+}
+
+.auth-form__container{
+    display: flex;
+    margin-top: 12px;
+    text-decoration: none;
+}
+
 .auth-form-user-options {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     font-weight: 400;
+}
+
+.auth-form-user-options a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.auth-form-button{
+    margin-right: 16px;
 }
 
 .auth-form-user-options .control-label {
@@ -1678,6 +1722,10 @@ body{
 
 .auth-form .field {
     width: 328px;
+}
+
+.auth-form .auth-form-field {
+    width: 304px;
 }
 
 .modal-button{
@@ -1703,7 +1751,7 @@ body{
   }
 
   /* Hide the browser's default checkbox */
-  .container input {
+  .catalog-products__container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -1723,7 +1771,7 @@ body{
   }
 
   /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
+  .catalog-products__container:hover input ~ .checkmark {
     background-image: url(../images/square.svg);
     background-repeat: no-repeat;
     width: 20px;
@@ -1731,7 +1779,7 @@ body{
   }
 
   /* When the checkbox is checked, add a blue background */
-  .container input:checked ~ .checkmark {
+  .catalog-products__container input:checked ~ .checkmark {
     background-image: url(../images/mark.svg);
     background-repeat: no-repeat;
     width: 20px;
@@ -1746,6 +1794,6 @@ body{
   }
 
   /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
+  .catalog-products__container input:checked ~ .checkmark:after {
     display: block;
   }
