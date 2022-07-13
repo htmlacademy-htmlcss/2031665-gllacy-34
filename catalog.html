@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <title>Каталог</title>
         <link rel="stylesheet" href="styles/styles.css">
+        <link rel="icon" href="images/favicon.ico">
     </head>
 
     <body>
@@ -16,7 +17,7 @@
                             <img src="images/main-logo.svg" alt="Логотип Gllacy Shop">
                         </a>
                     </div>
-                    <nav class="header__menu header__menu-catalog">
+                    <ul class="header__menu header__menu-catalog">
                         <li class="header__menu-item header__menu-item_active">
                             <a href="catalog.html">Каталог</a>
                         </li>
@@ -26,107 +27,119 @@
                         <li class="header__menu-item">
                             <a href="#">О компании</a>
                         </li>
-                    </nav>
+                    </ul>
                 </div>
-                <ul class="header__information">
+                <div class="header__information">
                     <span>
-                      <a class="header__information-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+                        <a class="header__information-phone" href="tel:+78005558628">+7 800 555-86-28</a>
                     </span>
                     <ul class="icon icon__catalog">
                         <li class="icon__item">
                             <a class="icon__link icon__search" href="#">
-                              <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66329 6.18799C1.66329 3.61066 3.75263 1.52132 6.32996 1.52132C8.90729 1.52132 10.9966 3.61066 10.9966 6.18799C10.9966 7.44526 10.4994 8.58641 9.69093 9.42554C9.66808 9.44309 9.64612 9.46234 9.62519 9.48326C9.60427 9.50418 9.58503 9.52614 9.56748 9.54898C8.72835 10.3575 7.58722 10.8547 6.32996 10.8547C3.75263 10.8547 1.66329 8.76532 1.66329 6.18799ZM10.0751 10.8759C9.04862 11.697 7.74662 12.188 6.32996 12.188C3.01625 12.188 0.329956 9.5017 0.329956 6.18799C0.329956 2.87428 3.01625 0.187988 6.32996 0.187988C9.64367 0.187988 12.33 2.87428 12.33 6.18799C12.33 7.60467 11.839 8.90668 11.0179 9.93313L13.468 12.3833C13.7284 12.6436 13.7284 13.0657 13.468 13.3261C13.2077 13.5864 12.7855 13.5864 12.5252 13.3261L10.0751 10.8759Z" fill="#2D3440"/>
-                              </svg>
-                              <span class="visually-hidden"> Поиск </span>
+                                <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.66329 6.18799C1.66329 3.61066 3.75263 1.52132 6.32996 1.52132C8.90729 1.52132 10.9966 3.61066 10.9966 6.18799C10.9966 7.44526 10.4994 8.58641 9.69093 9.42554C9.66808 9.44309 9.64612 9.46234 9.62519 9.48326C9.60427 9.50418 9.58503 9.52614 9.56748 9.54898C8.72835 10.3575 7.58722 10.8547 6.32996 10.8547C3.75263 10.8547 1.66329 8.76532 1.66329 6.18799ZM10.0751 10.8759C9.04862 11.697 7.74662 12.188 6.32996 12.188C3.01625 12.188 0.329956 9.5017 0.329956 6.18799C0.329956 2.87428 3.01625 0.187988 6.32996 0.187988C9.64367 0.187988 12.33 2.87428 12.33 6.18799C12.33 7.60467 11.839 8.90668 11.0179 9.93313L13.468 12.3833C13.7284 12.6436 13.7284 13.0657 13.468 13.3261C13.2077 13.5864 12.7855 13.5864 12.5252 13.3261L10.0751 10.8759Z"
+                                        fill="#2D3440" />
+                                </svg>
+                                <span class="visually-hidden"> Поиск </span>
                             </a>
                             <div class="popover popover-cart popover-search">
                                 <div class="popover-content popover-content-search">
-                                  <form>
-                                    <input class="search-input"  type="text" name="text" class="search" placeholder="Поиск по сайту">
-                                  </form>
+                                    <form>
+                                        <input class="search search-input" type="text" name="text"
+                                            placeholder="Поиск по сайту">
+                                    </form>
                                 </div>
                             </div>
                         </li>
                         <li class="icon__item">
-                          <a class="icon__link" href="#">
-                            <svg aria-hidden="true" focusable="false" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.667C9 1.298 9.298 1 9.667 1h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 1 1 0-1.333h2.666a.666.666 0 0 0 .667-.667V3a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 1.667ZM5.862 3.862c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.775L6.806 11.47a.667.667 0 1 1-.943-.942l2.195-2.196h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 4.805a.667.667 0 0 1 0-.943Z"></path>
-                            </svg>
-                            <span> Вход </span>
-                          </a>
-                          <div class="popover popover-cart popover-entry">
-                            <div class="popover-content">
-                                <h2 class="popover-title">Личный кабинет</h2>
-                                <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-                                    <p class="field-group field-group-entry">
-                                        <label class="visually-hidden"  for="email"></label>
-                                        <input class="auth-form-field field" type="email" id="fname" name="email" placeholder="email@example.com">
-                                    </p>
-                                    <p class="field-group field-group-entry">
-                                      <label class="visually-hidden" for="auth-password">Пароль</label>
-                                      <input class="auth-form-field field" type="password" id="auth-password" name="auth-password" placeholder="·····">
-                                    </p>
-                                    <div class="auth-form__container">
-                                        <button class="button pink-button auth-form-button" type="submit">Войти</button>
-                                        <p class="field-group auth-form-user-options">
-                                            <label class="auth-form-checkbox control">
-                                            </label>
-                                            <a class="auth-form-recovery" href="#">Забыли пароль?</a>
-                                            <a class="auth-form-recovery" href="#">Регистрация</a>
+                            <a class="icon__link" href="#">
+                                <svg aria-hidden="true" focusable="false" fill="currentColor" viewBox="0 0 16 16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9 1.667C9 1.298 9.298 1 9.667 1h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 1 1 0-1.333h2.666a.666.666 0 0 0 .667-.667V3a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 1.667ZM5.862 3.862c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.775L6.806 11.47a.667.667 0 1 1-.943-.942l2.195-2.196h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 4.805a.667.667 0 0 1 0-.943Z">
+                                    </path>
+                                </svg>
+                                <span> Вход </span>
+                            </a>
+                            <div class="popover popover-cart popover-entry">
+                                <div class="popover-content">
+                                    <h2 class="popover-title">Личный кабинет</h2>
+                                    <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                                        <p class="field-group field-group-entry">
+                                            <label class="visually-hidden" for="email"></label>
+                                            <input class="auth-form-field field" type="email" id="email" name="email"
+                                                placeholder="email@example.com">
                                         </p>
-                                    </div>
-                                </form>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="icon__item">
-                          <a class="icon__link" href="#">
-                            <svg aria-hidden="true" focusable="false" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"></path>
-                            </svg>
-                            <span class="icon__link-count"> 2 </span>
-                            <span>товара</span>
-                          </a>
-                          <div class="popover popover-cart">
-                            <div class="popover-content">
-                                <h2 class="popover-title">Корзина</h2>
-                                <ul class="cart-items-list">
-                                    <li class="cart-item">
-                                      <img src="images/catalog/raspberry.jpg" alt="raspberry">
-                                      <div class="card-item__container">
-                                        <p class="cart-item-title">Малинка</p>
-                                        <p class="cart-item-subtitle">1 кг х 310 ₽</p>
-                                      </div>
-                                      <p class="cart-item-price">310 ₽</p>
-                                      <button class="close-button"></button>
-                                    </li>
-                                    <li class="cart-item">
-                                        <img src="images/catalog/bubble-gum.jpg" alt="buble-gum">
-                                        <div class="card-item__container">
-                                          <p class="cart-item-title">Бабл-гам</p>
-                                          <p class="cart-item-subtitle">1,5 кг х 320 ₽</p>
+                                        <p class="field-group field-group-entry">
+                                            <label class="visually-hidden" for="auth-password">Пароль</label>
+                                            <input class="auth-form-field field" type="password" id="auth-password"
+                                                name="auth-password" placeholder="·····">
+                                        </p>
+                                        <div class="auth-form__container">
+                                            <button class="button pink-button auth-form-button"
+                                                type="submit">Войти</button>
+                                            <p class="field-group auth-form-user-options">
+                                                <label class="auth-form-checkbox control">
+                                                </label>
+                                                <a class="auth-form-recovery" href="#">Забыли пароль?</a>
+                                                <a class="auth-form-recovery" href="#">Регистрация</a>
+                                            </p>
                                         </div>
-                                        <p class="cart-item-price">480 ₽</p>
-                                        <button class="close-button"></button>
-                                    </li>
-                                </ul>
-                                <div class="popover-content__container">
-                                    <button class="button pink-button" type="submit">
-                                        <span>Оформить заказ</span>
-                                    </button>
-                                    <p class="total-price">Итого: 790 ₽</p>
+                                    </form>
                                 </div>
                             </div>
-                          </div>
-                          <div class="popover popover-cart-empty">
-                            <div class="popover-content popover-content-empty">
-                                <h2 class="popover-title">Ваша корзина пока пуста</h2>
-                            </div>
-                          </div>
                         </li>
-                      </ul>
-                  </ul>
+                        <li class="icon__item">
+                            <a class="icon__link" href="#">
+                                <svg aria-hidden="true" focusable="false" fill="currentColor" viewBox="0 0 16 16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z">
+                                    </path>
+                                </svg>
+                                <span class="icon__link-count"> 2 </span>
+                                <span>товара</span>
+                            </a>
+                            <div class="popover popover-cart">
+                                <div class="popover-content">
+                                    <h2 class="popover-title">Корзина</h2>
+                                    <ul class="cart-items-list">
+                                        <li class="cart-item">
+                                            <img src="images/catalog/raspberry.jpg" alt="raspberry">
+                                            <div class="card-item__container">
+                                                <p class="cart-item-title">Малинка</p>
+                                                <p class="cart-item-subtitle">1 кг х 310 ₽</p>
+                                            </div>
+                                            <p class="cart-item-price">310 ₽</p>
+                                            <button class="close-button"></button>
+                                        </li>
+                                        <li class="cart-item">
+                                            <img src="images/catalog/bubble-gum.jpg" alt="buble-gum">
+                                            <div class="card-item__container">
+                                                <p class="cart-item-title">Бабл-гам</p>
+                                                <p class="cart-item-subtitle">1,5 кг х 320 ₽</p>
+                                            </div>
+                                            <p class="cart-item-price">480 ₽</p>
+                                            <button class="close-button"></button>
+                                        </li>
+                                    </ul>
+                                    <div class="popover-content__container">
+                                        <button class="button pink-button" type="submit">
+                                            <span>Оформить заказ</span>
+                                        </button>
+                                        <p class="total-price">Итого: 790 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popover popover-cart-empty">
+                                <div class="popover-content popover-content-empty">
+                                    <h2 class="popover-title">Ваша корзина пока пуста</h2>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </header>
             <main class="main-catalog">
                 <div class="inner-header">
@@ -156,14 +169,14 @@
                             <legend class="catalog-products__title catalog-products__price">Цена: 100 ₽ – 500 ₽</legend>
                             <div class="range">
                                 <div class="range-scale">
-                                  <div class="range-bar">
-                                    <button class="range-toggle toggle-min">
-                                      <span class="visually-hidden">Изменить минимальную цену.</span>
-                                    </button>
-                                    <button class="range-toggle toggle-max">
-                                      <span class="visually-hidden">Изменить максимальную цену.</span>
-                                    </button>
-                                  </div>
+                                    <div class="range-bar">
+                                        <button class="range-toggle toggle-min">
+                                            <span class="visually-hidden">Изменить минимальную цену.</span>
+                                        </button>
+                                        <button class="range-toggle toggle-max">
+                                            <span class="visually-hidden">Изменить максимальную цену.</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </fieldset>
@@ -173,28 +186,32 @@
                             <ul class="catalog-products__form-radio-list">
                                 <li class="catalog-products__form-radio-item">
                                     <label class="control">
-                                        <input class="visually-hidden control-input" type="radio" name="product-group" value="zero-percent" checked>
+                                        <input class="visually-hidden control-input" type="radio" name="product-group"
+                                            value="zero-percent" checked>
                                         <span class="control-mark"></span>
                                         <span class="control-label">0%</span>
                                     </label>
                                 </li>
                                 <li class="catalog-products__form-radio-item">
                                     <label class="control">
-                                        <input class="visually-hidden control-input" type="radio" name="product-group" value="less-ten-percent" checked>
+                                        <input class="visually-hidden control-input" type="radio" name="product-group"
+                                            value="less-ten-percent" checked>
                                         <span class="control-mark"></span>
                                         <span class="control-label">до 10%</span>
                                     </label>
                                 </li>
                                 <li class="catalog-products__form-radio-item">
                                     <label class="control">
-                                        <input class="visually-hidden control-input" type="radio" name="product-group" value="less-thirty-percent" checked>
+                                        <input class="visually-hidden control-input" type="radio" name="product-group"
+                                            value="less-thirty-percent" checked>
                                         <span class="control-mark"></span>
                                         <span class="control-label">до 30%</span>
                                     </label>
                                 </li>
                                 <li class="catalog-products__form-radio-item">
                                     <label class="control">
-                                        <input class="visually-hidden control-input" type="radio" name="product-group" value="more-thirty-percent" checked>
+                                        <input class="visually-hidden control-input" type="radio" name="product-group"
+                                            value="more-thirty-percent" checked>
                                         <span class="control-mark"></span>
                                         <span class="control-label">выше 30%</span>
                                     </label>
@@ -208,61 +225,71 @@
                             <ul class="catalog-products__form-checkbox-list">
                                 <li class="catalog-products__form-checkbox-item">
                                     <label class="catalog-products__container">
-                                            <input type="checkbox" name="chocolate" checked>
-                                                <svg class="svg1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61513 1.61538C1.79569 1.43483 2.04057 1.33339 2.2959 1.33339H13.7029C13.9446 1.33339 14.0431 1.36192 14.0976 1.386C14.1553 1.4115 14.2281 1.45987 14.3836 1.61538C14.5908 1.82258 14.6656 2.04763 14.6656 2.29615V13.6647C14.6649 13.6771 14.6646 13.6896 14.6646 13.7021C14.6646 13.9574 14.5632 14.2023 14.3826 14.3829C14.2021 14.5634 13.9572 14.6648 13.7018 14.6648H2.2959C2.04057 14.6648 1.79569 14.5634 1.61513 14.3829C1.43458 14.2023 1.33315 13.9574 1.33315 13.7021V2.29615C1.33315 2.04081 1.43458 1.79593 1.61513 1.61538ZM15.8381 14.5437C15.7237 14.834 15.5503 15.1008 15.3254 15.3257C14.8948 15.7563 14.3108 15.9982 13.7018 15.9982H2.2959C1.68694 15.9982 1.10293 15.7563 0.672325 15.3257C0.241725 14.8951 -0.000183105 14.311 -0.000183105 13.7021V2.29615C-0.000183105 1.68719 0.241725 1.10317 0.672325 0.672569C0.898314 0.44658 1.16656 0.272564 1.45849 0.158214C1.57473 0.0595667 1.72523 6.10352e-05 1.88963 6.10352e-05H2.2959H13.7029C14.0403 6.10352e-05 14.3458 0.0379688 14.6365 0.166421C14.924 0.293453 15.1376 0.483702 15.3265 0.672572C15.808 1.15413 15.999 1.72995 15.999 2.29615V14.1094C15.999 14.2753 15.9384 14.4271 15.8381 14.5437Z"/>
-                                                </svg>
-                                                <svg class="svg2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61532 1.61526C1.7958 1.43471 2.04051 1.33333 2.29562 1.33333H11.2545C11.6227 1.33333 11.9212 1.03486 11.9212 0.666667C11.9212 0.298477 11.6227 0 11.2545 0H2.29562C1.68671 0 1.10279 0.241993 0.672314 0.672654C0.241845 1.1033 6.10352e-05 1.68733 6.10352e-05 2.29624V13.7033C6.10352e-05 14.3122 0.241845 14.8962 0.672314 15.3269C1.10279 15.7575 1.68671 15.9995 2.29562 15.9995H13.6978C14.3067 15.9995 14.8907 15.7575 15.3211 15.3269C15.7516 14.8962 15.9934 14.3122 15.9934 13.7033V7.99976C15.9934 7.63157 15.6949 7.3331 15.3267 7.3331C14.9585 7.3331 14.6601 7.63157 14.6601 7.99976V13.7033C14.6601 13.9588 14.5586 14.2037 14.3781 14.3843C14.1977 14.5648 13.9529 14.6662 13.6978 14.6662H2.29562C2.04051 14.6662 1.7958 14.5648 1.61532 14.3843C1.43484 14.2037 1.33339 13.9588 1.33339 13.7033V2.29624C1.33339 2.04077 1.43484 1.79582 1.61532 1.61526ZM15.8167 1.9404C16.0699 1.6731 16.0585 1.25115 15.7912 0.997933C15.5239 0.74472 15.1019 0.756136 14.8487 1.02343L7.61408 8.66042L5.78248 6.72695C5.52927 6.45966 5.10732 6.44824 4.84002 6.70145C4.57272 6.95467 4.56131 7.37662 4.81452 7.64392L7.1301 10.0883C7.256 10.2212 7.43101 10.2965 7.61408 10.2965C7.79715 10.2965 7.97216 10.2212 8.09806 10.0883L15.8167 1.9404Z"/>
-                                                </svg>
+                                        <input type="checkbox" name="chocolate" checked>
+                                        <svg class="svg1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.61513 1.61538C1.79569 1.43483 2.04057 1.33339 2.2959 1.33339H13.7029C13.9446 1.33339 14.0431 1.36192 14.0976 1.386C14.1553 1.4115 14.2281 1.45987 14.3836 1.61538C14.5908 1.82258 14.6656 2.04763 14.6656 2.29615V13.6647C14.6649 13.6771 14.6646 13.6896 14.6646 13.7021C14.6646 13.9574 14.5632 14.2023 14.3826 14.3829C14.2021 14.5634 13.9572 14.6648 13.7018 14.6648H2.2959C2.04057 14.6648 1.79569 14.5634 1.61513 14.3829C1.43458 14.2023 1.33315 13.9574 1.33315 13.7021V2.29615C1.33315 2.04081 1.43458 1.79593 1.61513 1.61538ZM15.8381 14.5437C15.7237 14.834 15.5503 15.1008 15.3254 15.3257C14.8948 15.7563 14.3108 15.9982 13.7018 15.9982H2.2959C1.68694 15.9982 1.10293 15.7563 0.672325 15.3257C0.241725 14.8951 -0.000183105 14.311 -0.000183105 13.7021V2.29615C-0.000183105 1.68719 0.241725 1.10317 0.672325 0.672569C0.898314 0.44658 1.16656 0.272564 1.45849 0.158214C1.57473 0.0595667 1.72523 6.10352e-05 1.88963 6.10352e-05H2.2959H13.7029C14.0403 6.10352e-05 14.3458 0.0379688 14.6365 0.166421C14.924 0.293453 15.1376 0.483702 15.3265 0.672572C15.808 1.15413 15.999 1.72995 15.999 2.29615V14.1094C15.999 14.2753 15.9384 14.4271 15.8381 14.5437Z" />
+                                        </svg>
+                                        <svg class="svg2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.61532 1.61526C1.7958 1.43471 2.04051 1.33333 2.29562 1.33333H11.2545C11.6227 1.33333 11.9212 1.03486 11.9212 0.666667C11.9212 0.298477 11.6227 0 11.2545 0H2.29562C1.68671 0 1.10279 0.241993 0.672314 0.672654C0.241845 1.1033 6.10352e-05 1.68733 6.10352e-05 2.29624V13.7033C6.10352e-05 14.3122 0.241845 14.8962 0.672314 15.3269C1.10279 15.7575 1.68671 15.9995 2.29562 15.9995H13.6978C14.3067 15.9995 14.8907 15.7575 15.3211 15.3269C15.7516 14.8962 15.9934 14.3122 15.9934 13.7033V7.99976C15.9934 7.63157 15.6949 7.3331 15.3267 7.3331C14.9585 7.3331 14.6601 7.63157 14.6601 7.99976V13.7033C14.6601 13.9588 14.5586 14.2037 14.3781 14.3843C14.1977 14.5648 13.9529 14.6662 13.6978 14.6662H2.29562C2.04051 14.6662 1.7958 14.5648 1.61532 14.3843C1.43484 14.2037 1.33339 13.9588 1.33339 13.7033V2.29624C1.33339 2.04077 1.43484 1.79582 1.61532 1.61526ZM15.8167 1.9404C16.0699 1.6731 16.0585 1.25115 15.7912 0.997933C15.5239 0.74472 15.1019 0.756136 14.8487 1.02343L7.61408 8.66042L5.78248 6.72695C5.52927 6.45966 5.10732 6.44824 4.84002 6.70145C4.57272 6.95467 4.56131 7.37662 4.81452 7.64392L7.1301 10.0883C7.256 10.2212 7.43101 10.2965 7.61408 10.2965C7.79715 10.2965 7.97216 10.2212 8.09806 10.0883L15.8167 1.9404Z" />
+                                        </svg>
                                         <span class="control-label">шоколадные</span>
                                     </label>
                                 </li>
                                 <li class="catalog-products__form-checkbox-item">
                                     <label class="catalog-products__container">
                                         <input type="checkbox" name="sugar" checked>
-                                                <svg class="svg1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61513 1.61538C1.79569 1.43483 2.04057 1.33339 2.2959 1.33339H13.7029C13.9446 1.33339 14.0431 1.36192 14.0976 1.386C14.1553 1.4115 14.2281 1.45987 14.3836 1.61538C14.5908 1.82258 14.6656 2.04763 14.6656 2.29615V13.6647C14.6649 13.6771 14.6646 13.6896 14.6646 13.7021C14.6646 13.9574 14.5632 14.2023 14.3826 14.3829C14.2021 14.5634 13.9572 14.6648 13.7018 14.6648H2.2959C2.04057 14.6648 1.79569 14.5634 1.61513 14.3829C1.43458 14.2023 1.33315 13.9574 1.33315 13.7021V2.29615C1.33315 2.04081 1.43458 1.79593 1.61513 1.61538ZM15.8381 14.5437C15.7237 14.834 15.5503 15.1008 15.3254 15.3257C14.8948 15.7563 14.3108 15.9982 13.7018 15.9982H2.2959C1.68694 15.9982 1.10293 15.7563 0.672325 15.3257C0.241725 14.8951 -0.000183105 14.311 -0.000183105 13.7021V2.29615C-0.000183105 1.68719 0.241725 1.10317 0.672325 0.672569C0.898314 0.44658 1.16656 0.272564 1.45849 0.158214C1.57473 0.0595667 1.72523 6.10352e-05 1.88963 6.10352e-05H2.2959H13.7029C14.0403 6.10352e-05 14.3458 0.0379688 14.6365 0.166421C14.924 0.293453 15.1376 0.483702 15.3265 0.672572C15.808 1.15413 15.999 1.72995 15.999 2.29615V14.1094C15.999 14.2753 15.9384 14.4271 15.8381 14.5437Z"/>
-                                                </svg>
-                                                <svg class="svg2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61532 1.61526C1.7958 1.43471 2.04051 1.33333 2.29562 1.33333H11.2545C11.6227 1.33333 11.9212 1.03486 11.9212 0.666667C11.9212 0.298477 11.6227 0 11.2545 0H2.29562C1.68671 0 1.10279 0.241993 0.672314 0.672654C0.241845 1.1033 6.10352e-05 1.68733 6.10352e-05 2.29624V13.7033C6.10352e-05 14.3122 0.241845 14.8962 0.672314 15.3269C1.10279 15.7575 1.68671 15.9995 2.29562 15.9995H13.6978C14.3067 15.9995 14.8907 15.7575 15.3211 15.3269C15.7516 14.8962 15.9934 14.3122 15.9934 13.7033V7.99976C15.9934 7.63157 15.6949 7.3331 15.3267 7.3331C14.9585 7.3331 14.6601 7.63157 14.6601 7.99976V13.7033C14.6601 13.9588 14.5586 14.2037 14.3781 14.3843C14.1977 14.5648 13.9529 14.6662 13.6978 14.6662H2.29562C2.04051 14.6662 1.7958 14.5648 1.61532 14.3843C1.43484 14.2037 1.33339 13.9588 1.33339 13.7033V2.29624C1.33339 2.04077 1.43484 1.79582 1.61532 1.61526ZM15.8167 1.9404C16.0699 1.6731 16.0585 1.25115 15.7912 0.997933C15.5239 0.74472 15.1019 0.756136 14.8487 1.02343L7.61408 8.66042L5.78248 6.72695C5.52927 6.45966 5.10732 6.44824 4.84002 6.70145C4.57272 6.95467 4.56131 7.37662 4.81452 7.64392L7.1301 10.0883C7.256 10.2212 7.43101 10.2965 7.61408 10.2965C7.79715 10.2965 7.97216 10.2212 8.09806 10.0883L15.8167 1.9404Z"/>
-                                                </svg>
+                                        <svg class="svg1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.61513 1.61538C1.79569 1.43483 2.04057 1.33339 2.2959 1.33339H13.7029C13.9446 1.33339 14.0431 1.36192 14.0976 1.386C14.1553 1.4115 14.2281 1.45987 14.3836 1.61538C14.5908 1.82258 14.6656 2.04763 14.6656 2.29615V13.6647C14.6649 13.6771 14.6646 13.6896 14.6646 13.7021C14.6646 13.9574 14.5632 14.2023 14.3826 14.3829C14.2021 14.5634 13.9572 14.6648 13.7018 14.6648H2.2959C2.04057 14.6648 1.79569 14.5634 1.61513 14.3829C1.43458 14.2023 1.33315 13.9574 1.33315 13.7021V2.29615C1.33315 2.04081 1.43458 1.79593 1.61513 1.61538ZM15.8381 14.5437C15.7237 14.834 15.5503 15.1008 15.3254 15.3257C14.8948 15.7563 14.3108 15.9982 13.7018 15.9982H2.2959C1.68694 15.9982 1.10293 15.7563 0.672325 15.3257C0.241725 14.8951 -0.000183105 14.311 -0.000183105 13.7021V2.29615C-0.000183105 1.68719 0.241725 1.10317 0.672325 0.672569C0.898314 0.44658 1.16656 0.272564 1.45849 0.158214C1.57473 0.0595667 1.72523 6.10352e-05 1.88963 6.10352e-05H2.2959H13.7029C14.0403 6.10352e-05 14.3458 0.0379688 14.6365 0.166421C14.924 0.293453 15.1376 0.483702 15.3265 0.672572C15.808 1.15413 15.999 1.72995 15.999 2.29615V14.1094C15.999 14.2753 15.9384 14.4271 15.8381 14.5437Z" />
+                                        </svg>
+                                        <svg class="svg2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.61532 1.61526C1.7958 1.43471 2.04051 1.33333 2.29562 1.33333H11.2545C11.6227 1.33333 11.9212 1.03486 11.9212 0.666667C11.9212 0.298477 11.6227 0 11.2545 0H2.29562C1.68671 0 1.10279 0.241993 0.672314 0.672654C0.241845 1.1033 6.10352e-05 1.68733 6.10352e-05 2.29624V13.7033C6.10352e-05 14.3122 0.241845 14.8962 0.672314 15.3269C1.10279 15.7575 1.68671 15.9995 2.29562 15.9995H13.6978C14.3067 15.9995 14.8907 15.7575 15.3211 15.3269C15.7516 14.8962 15.9934 14.3122 15.9934 13.7033V7.99976C15.9934 7.63157 15.6949 7.3331 15.3267 7.3331C14.9585 7.3331 14.6601 7.63157 14.6601 7.99976V13.7033C14.6601 13.9588 14.5586 14.2037 14.3781 14.3843C14.1977 14.5648 13.9529 14.6662 13.6978 14.6662H2.29562C2.04051 14.6662 1.7958 14.5648 1.61532 14.3843C1.43484 14.2037 1.33339 13.9588 1.33339 13.7033V2.29624C1.33339 2.04077 1.43484 1.79582 1.61532 1.61526ZM15.8167 1.9404C16.0699 1.6731 16.0585 1.25115 15.7912 0.997933C15.5239 0.74472 15.1019 0.756136 14.8487 1.02343L7.61408 8.66042L5.78248 6.72695C5.52927 6.45966 5.10732 6.44824 4.84002 6.70145C4.57272 6.95467 4.56131 7.37662 4.81452 7.64392L7.1301 10.0883C7.256 10.2212 7.43101 10.2965 7.61408 10.2965C7.79715 10.2965 7.97216 10.2212 8.09806 10.0883L15.8167 1.9404Z" />
+                                        </svg>
                                         <span class="control-label">сахарные посыпки</span>
                                     </label>
                                 </li>
                                 <li class="catalog-products__form-checkbox-item">
                                     <label class="catalog-products__container">
                                         <input type="checkbox" name="fruit">
-                                                <svg class="svg1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61513 1.61538C1.79569 1.43483 2.04057 1.33339 2.2959 1.33339H13.7029C13.9446 1.33339 14.0431 1.36192 14.0976 1.386C14.1553 1.4115 14.2281 1.45987 14.3836 1.61538C14.5908 1.82258 14.6656 2.04763 14.6656 2.29615V13.6647C14.6649 13.6771 14.6646 13.6896 14.6646 13.7021C14.6646 13.9574 14.5632 14.2023 14.3826 14.3829C14.2021 14.5634 13.9572 14.6648 13.7018 14.6648H2.2959C2.04057 14.6648 1.79569 14.5634 1.61513 14.3829C1.43458 14.2023 1.33315 13.9574 1.33315 13.7021V2.29615C1.33315 2.04081 1.43458 1.79593 1.61513 1.61538ZM15.8381 14.5437C15.7237 14.834 15.5503 15.1008 15.3254 15.3257C14.8948 15.7563 14.3108 15.9982 13.7018 15.9982H2.2959C1.68694 15.9982 1.10293 15.7563 0.672325 15.3257C0.241725 14.8951 -0.000183105 14.311 -0.000183105 13.7021V2.29615C-0.000183105 1.68719 0.241725 1.10317 0.672325 0.672569C0.898314 0.44658 1.16656 0.272564 1.45849 0.158214C1.57473 0.0595667 1.72523 6.10352e-05 1.88963 6.10352e-05H2.2959H13.7029C14.0403 6.10352e-05 14.3458 0.0379688 14.6365 0.166421C14.924 0.293453 15.1376 0.483702 15.3265 0.672572C15.808 1.15413 15.999 1.72995 15.999 2.29615V14.1094C15.999 14.2753 15.9384 14.4271 15.8381 14.5437Z"/>
-                                                </svg>
-                                                <svg class="svg2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61532 1.61526C1.7958 1.43471 2.04051 1.33333 2.29562 1.33333H11.2545C11.6227 1.33333 11.9212 1.03486 11.9212 0.666667C11.9212 0.298477 11.6227 0 11.2545 0H2.29562C1.68671 0 1.10279 0.241993 0.672314 0.672654C0.241845 1.1033 6.10352e-05 1.68733 6.10352e-05 2.29624V13.7033C6.10352e-05 14.3122 0.241845 14.8962 0.672314 15.3269C1.10279 15.7575 1.68671 15.9995 2.29562 15.9995H13.6978C14.3067 15.9995 14.8907 15.7575 15.3211 15.3269C15.7516 14.8962 15.9934 14.3122 15.9934 13.7033V7.99976C15.9934 7.63157 15.6949 7.3331 15.3267 7.3331C14.9585 7.3331 14.6601 7.63157 14.6601 7.99976V13.7033C14.6601 13.9588 14.5586 14.2037 14.3781 14.3843C14.1977 14.5648 13.9529 14.6662 13.6978 14.6662H2.29562C2.04051 14.6662 1.7958 14.5648 1.61532 14.3843C1.43484 14.2037 1.33339 13.9588 1.33339 13.7033V2.29624C1.33339 2.04077 1.43484 1.79582 1.61532 1.61526ZM15.8167 1.9404C16.0699 1.6731 16.0585 1.25115 15.7912 0.997933C15.5239 0.74472 15.1019 0.756136 14.8487 1.02343L7.61408 8.66042L5.78248 6.72695C5.52927 6.45966 5.10732 6.44824 4.84002 6.70145C4.57272 6.95467 4.56131 7.37662 4.81452 7.64392L7.1301 10.0883C7.256 10.2212 7.43101 10.2965 7.61408 10.2965C7.79715 10.2965 7.97216 10.2212 8.09806 10.0883L15.8167 1.9404Z"/>
-                                                </svg>
+                                        <svg class="svg1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.61513 1.61538C1.79569 1.43483 2.04057 1.33339 2.2959 1.33339H13.7029C13.9446 1.33339 14.0431 1.36192 14.0976 1.386C14.1553 1.4115 14.2281 1.45987 14.3836 1.61538C14.5908 1.82258 14.6656 2.04763 14.6656 2.29615V13.6647C14.6649 13.6771 14.6646 13.6896 14.6646 13.7021C14.6646 13.9574 14.5632 14.2023 14.3826 14.3829C14.2021 14.5634 13.9572 14.6648 13.7018 14.6648H2.2959C2.04057 14.6648 1.79569 14.5634 1.61513 14.3829C1.43458 14.2023 1.33315 13.9574 1.33315 13.7021V2.29615C1.33315 2.04081 1.43458 1.79593 1.61513 1.61538ZM15.8381 14.5437C15.7237 14.834 15.5503 15.1008 15.3254 15.3257C14.8948 15.7563 14.3108 15.9982 13.7018 15.9982H2.2959C1.68694 15.9982 1.10293 15.7563 0.672325 15.3257C0.241725 14.8951 -0.000183105 14.311 -0.000183105 13.7021V2.29615C-0.000183105 1.68719 0.241725 1.10317 0.672325 0.672569C0.898314 0.44658 1.16656 0.272564 1.45849 0.158214C1.57473 0.0595667 1.72523 6.10352e-05 1.88963 6.10352e-05H2.2959H13.7029C14.0403 6.10352e-05 14.3458 0.0379688 14.6365 0.166421C14.924 0.293453 15.1376 0.483702 15.3265 0.672572C15.808 1.15413 15.999 1.72995 15.999 2.29615V14.1094C15.999 14.2753 15.9384 14.4271 15.8381 14.5437Z" />
+                                        </svg>
+                                        <svg class="svg2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.61532 1.61526C1.7958 1.43471 2.04051 1.33333 2.29562 1.33333H11.2545C11.6227 1.33333 11.9212 1.03486 11.9212 0.666667C11.9212 0.298477 11.6227 0 11.2545 0H2.29562C1.68671 0 1.10279 0.241993 0.672314 0.672654C0.241845 1.1033 6.10352e-05 1.68733 6.10352e-05 2.29624V13.7033C6.10352e-05 14.3122 0.241845 14.8962 0.672314 15.3269C1.10279 15.7575 1.68671 15.9995 2.29562 15.9995H13.6978C14.3067 15.9995 14.8907 15.7575 15.3211 15.3269C15.7516 14.8962 15.9934 14.3122 15.9934 13.7033V7.99976C15.9934 7.63157 15.6949 7.3331 15.3267 7.3331C14.9585 7.3331 14.6601 7.63157 14.6601 7.99976V13.7033C14.6601 13.9588 14.5586 14.2037 14.3781 14.3843C14.1977 14.5648 13.9529 14.6662 13.6978 14.6662H2.29562C2.04051 14.6662 1.7958 14.5648 1.61532 14.3843C1.43484 14.2037 1.33339 13.9588 1.33339 13.7033V2.29624C1.33339 2.04077 1.43484 1.79582 1.61532 1.61526ZM15.8167 1.9404C16.0699 1.6731 16.0585 1.25115 15.7912 0.997933C15.5239 0.74472 15.1019 0.756136 14.8487 1.02343L7.61408 8.66042L5.78248 6.72695C5.52927 6.45966 5.10732 6.44824 4.84002 6.70145C4.57272 6.95467 4.56131 7.37662 4.81452 7.64392L7.1301 10.0883C7.256 10.2212 7.43101 10.2965 7.61408 10.2965C7.79715 10.2965 7.97216 10.2212 8.09806 10.0883L15.8167 1.9404Z" />
+                                        </svg>
                                         <span class="control-label">фрукты</span>
                                     </label>
                                 </li>
                                 <li class="catalog-products__form-checkbox-item">
                                     <label class="catalog-products__container">
                                         <input type="checkbox" name="syrop">
-                                                <svg class="svg1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61513 1.61538C1.79569 1.43483 2.04057 1.33339 2.2959 1.33339H13.7029C13.9446 1.33339 14.0431 1.36192 14.0976 1.386C14.1553 1.4115 14.2281 1.45987 14.3836 1.61538C14.5908 1.82258 14.6656 2.04763 14.6656 2.29615V13.6647C14.6649 13.6771 14.6646 13.6896 14.6646 13.7021C14.6646 13.9574 14.5632 14.2023 14.3826 14.3829C14.2021 14.5634 13.9572 14.6648 13.7018 14.6648H2.2959C2.04057 14.6648 1.79569 14.5634 1.61513 14.3829C1.43458 14.2023 1.33315 13.9574 1.33315 13.7021V2.29615C1.33315 2.04081 1.43458 1.79593 1.61513 1.61538ZM15.8381 14.5437C15.7237 14.834 15.5503 15.1008 15.3254 15.3257C14.8948 15.7563 14.3108 15.9982 13.7018 15.9982H2.2959C1.68694 15.9982 1.10293 15.7563 0.672325 15.3257C0.241725 14.8951 -0.000183105 14.311 -0.000183105 13.7021V2.29615C-0.000183105 1.68719 0.241725 1.10317 0.672325 0.672569C0.898314 0.44658 1.16656 0.272564 1.45849 0.158214C1.57473 0.0595667 1.72523 6.10352e-05 1.88963 6.10352e-05H2.2959H13.7029C14.0403 6.10352e-05 14.3458 0.0379688 14.6365 0.166421C14.924 0.293453 15.1376 0.483702 15.3265 0.672572C15.808 1.15413 15.999 1.72995 15.999 2.29615V14.1094C15.999 14.2753 15.9384 14.4271 15.8381 14.5437Z"/>
-                                                </svg>
-                                                <svg class="svg2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61532 1.61526C1.7958 1.43471 2.04051 1.33333 2.29562 1.33333H11.2545C11.6227 1.33333 11.9212 1.03486 11.9212 0.666667C11.9212 0.298477 11.6227 0 11.2545 0H2.29562C1.68671 0 1.10279 0.241993 0.672314 0.672654C0.241845 1.1033 6.10352e-05 1.68733 6.10352e-05 2.29624V13.7033C6.10352e-05 14.3122 0.241845 14.8962 0.672314 15.3269C1.10279 15.7575 1.68671 15.9995 2.29562 15.9995H13.6978C14.3067 15.9995 14.8907 15.7575 15.3211 15.3269C15.7516 14.8962 15.9934 14.3122 15.9934 13.7033V7.99976C15.9934 7.63157 15.6949 7.3331 15.3267 7.3331C14.9585 7.3331 14.6601 7.63157 14.6601 7.99976V13.7033C14.6601 13.9588 14.5586 14.2037 14.3781 14.3843C14.1977 14.5648 13.9529 14.6662 13.6978 14.6662H2.29562C2.04051 14.6662 1.7958 14.5648 1.61532 14.3843C1.43484 14.2037 1.33339 13.9588 1.33339 13.7033V2.29624C1.33339 2.04077 1.43484 1.79582 1.61532 1.61526ZM15.8167 1.9404C16.0699 1.6731 16.0585 1.25115 15.7912 0.997933C15.5239 0.74472 15.1019 0.756136 14.8487 1.02343L7.61408 8.66042L5.78248 6.72695C5.52927 6.45966 5.10732 6.44824 4.84002 6.70145C4.57272 6.95467 4.56131 7.37662 4.81452 7.64392L7.1301 10.0883C7.256 10.2212 7.43101 10.2965 7.61408 10.2965C7.79715 10.2965 7.97216 10.2212 8.09806 10.0883L15.8167 1.9404Z"/>
-                                                </svg>
+                                        <svg class="svg1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.61513 1.61538C1.79569 1.43483 2.04057 1.33339 2.2959 1.33339H13.7029C13.9446 1.33339 14.0431 1.36192 14.0976 1.386C14.1553 1.4115 14.2281 1.45987 14.3836 1.61538C14.5908 1.82258 14.6656 2.04763 14.6656 2.29615V13.6647C14.6649 13.6771 14.6646 13.6896 14.6646 13.7021C14.6646 13.9574 14.5632 14.2023 14.3826 14.3829C14.2021 14.5634 13.9572 14.6648 13.7018 14.6648H2.2959C2.04057 14.6648 1.79569 14.5634 1.61513 14.3829C1.43458 14.2023 1.33315 13.9574 1.33315 13.7021V2.29615C1.33315 2.04081 1.43458 1.79593 1.61513 1.61538ZM15.8381 14.5437C15.7237 14.834 15.5503 15.1008 15.3254 15.3257C14.8948 15.7563 14.3108 15.9982 13.7018 15.9982H2.2959C1.68694 15.9982 1.10293 15.7563 0.672325 15.3257C0.241725 14.8951 -0.000183105 14.311 -0.000183105 13.7021V2.29615C-0.000183105 1.68719 0.241725 1.10317 0.672325 0.672569C0.898314 0.44658 1.16656 0.272564 1.45849 0.158214C1.57473 0.0595667 1.72523 6.10352e-05 1.88963 6.10352e-05H2.2959H13.7029C14.0403 6.10352e-05 14.3458 0.0379688 14.6365 0.166421C14.924 0.293453 15.1376 0.483702 15.3265 0.672572C15.808 1.15413 15.999 1.72995 15.999 2.29615V14.1094C15.999 14.2753 15.9384 14.4271 15.8381 14.5437Z" />
+                                        </svg>
+                                        <svg class="svg2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.61532 1.61526C1.7958 1.43471 2.04051 1.33333 2.29562 1.33333H11.2545C11.6227 1.33333 11.9212 1.03486 11.9212 0.666667C11.9212 0.298477 11.6227 0 11.2545 0H2.29562C1.68671 0 1.10279 0.241993 0.672314 0.672654C0.241845 1.1033 6.10352e-05 1.68733 6.10352e-05 2.29624V13.7033C6.10352e-05 14.3122 0.241845 14.8962 0.672314 15.3269C1.10279 15.7575 1.68671 15.9995 2.29562 15.9995H13.6978C14.3067 15.9995 14.8907 15.7575 15.3211 15.3269C15.7516 14.8962 15.9934 14.3122 15.9934 13.7033V7.99976C15.9934 7.63157 15.6949 7.3331 15.3267 7.3331C14.9585 7.3331 14.6601 7.63157 14.6601 7.99976V13.7033C14.6601 13.9588 14.5586 14.2037 14.3781 14.3843C14.1977 14.5648 13.9529 14.6662 13.6978 14.6662H2.29562C2.04051 14.6662 1.7958 14.5648 1.61532 14.3843C1.43484 14.2037 1.33339 13.9588 1.33339 13.7033V2.29624C1.33339 2.04077 1.43484 1.79582 1.61532 1.61526ZM15.8167 1.9404C16.0699 1.6731 16.0585 1.25115 15.7912 0.997933C15.5239 0.74472 15.1019 0.756136 14.8487 1.02343L7.61408 8.66042L5.78248 6.72695C5.52927 6.45966 5.10732 6.44824 4.84002 6.70145C4.57272 6.95467 4.56131 7.37662 4.81452 7.64392L7.1301 10.0883C7.256 10.2212 7.43101 10.2965 7.61408 10.2965C7.79715 10.2965 7.97216 10.2212 8.09806 10.0883L15.8167 1.9404Z" />
+                                        </svg>
                                         <span class="control-label">сиропы</span>
                                     </label>
                                 </li>
                                 <li class="catalog-products__form-checkbox-item">
                                     <label class="catalog-products__container">
                                         <input type="checkbox" name="jam">
-                                                <svg class="svg1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61513 1.61538C1.79569 1.43483 2.04057 1.33339 2.2959 1.33339H13.7029C13.9446 1.33339 14.0431 1.36192 14.0976 1.386C14.1553 1.4115 14.2281 1.45987 14.3836 1.61538C14.5908 1.82258 14.6656 2.04763 14.6656 2.29615V13.6647C14.6649 13.6771 14.6646 13.6896 14.6646 13.7021C14.6646 13.9574 14.5632 14.2023 14.3826 14.3829C14.2021 14.5634 13.9572 14.6648 13.7018 14.6648H2.2959C2.04057 14.6648 1.79569 14.5634 1.61513 14.3829C1.43458 14.2023 1.33315 13.9574 1.33315 13.7021V2.29615C1.33315 2.04081 1.43458 1.79593 1.61513 1.61538ZM15.8381 14.5437C15.7237 14.834 15.5503 15.1008 15.3254 15.3257C14.8948 15.7563 14.3108 15.9982 13.7018 15.9982H2.2959C1.68694 15.9982 1.10293 15.7563 0.672325 15.3257C0.241725 14.8951 -0.000183105 14.311 -0.000183105 13.7021V2.29615C-0.000183105 1.68719 0.241725 1.10317 0.672325 0.672569C0.898314 0.44658 1.16656 0.272564 1.45849 0.158214C1.57473 0.0595667 1.72523 6.10352e-05 1.88963 6.10352e-05H2.2959H13.7029C14.0403 6.10352e-05 14.3458 0.0379688 14.6365 0.166421C14.924 0.293453 15.1376 0.483702 15.3265 0.672572C15.808 1.15413 15.999 1.72995 15.999 2.29615V14.1094C15.999 14.2753 15.9384 14.4271 15.8381 14.5437Z"/>
-                                                </svg>
-                                                <svg class="svg2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61532 1.61526C1.7958 1.43471 2.04051 1.33333 2.29562 1.33333H11.2545C11.6227 1.33333 11.9212 1.03486 11.9212 0.666667C11.9212 0.298477 11.6227 0 11.2545 0H2.29562C1.68671 0 1.10279 0.241993 0.672314 0.672654C0.241845 1.1033 6.10352e-05 1.68733 6.10352e-05 2.29624V13.7033C6.10352e-05 14.3122 0.241845 14.8962 0.672314 15.3269C1.10279 15.7575 1.68671 15.9995 2.29562 15.9995H13.6978C14.3067 15.9995 14.8907 15.7575 15.3211 15.3269C15.7516 14.8962 15.9934 14.3122 15.9934 13.7033V7.99976C15.9934 7.63157 15.6949 7.3331 15.3267 7.3331C14.9585 7.3331 14.6601 7.63157 14.6601 7.99976V13.7033C14.6601 13.9588 14.5586 14.2037 14.3781 14.3843C14.1977 14.5648 13.9529 14.6662 13.6978 14.6662H2.29562C2.04051 14.6662 1.7958 14.5648 1.61532 14.3843C1.43484 14.2037 1.33339 13.9588 1.33339 13.7033V2.29624C1.33339 2.04077 1.43484 1.79582 1.61532 1.61526ZM15.8167 1.9404C16.0699 1.6731 16.0585 1.25115 15.7912 0.997933C15.5239 0.74472 15.1019 0.756136 14.8487 1.02343L7.61408 8.66042L5.78248 6.72695C5.52927 6.45966 5.10732 6.44824 4.84002 6.70145C4.57272 6.95467 4.56131 7.37662 4.81452 7.64392L7.1301 10.0883C7.256 10.2212 7.43101 10.2965 7.61408 10.2965C7.79715 10.2965 7.97216 10.2212 8.09806 10.0883L15.8167 1.9404Z"/>
-                                                </svg>
+                                        <svg class="svg1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.61513 1.61538C1.79569 1.43483 2.04057 1.33339 2.2959 1.33339H13.7029C13.9446 1.33339 14.0431 1.36192 14.0976 1.386C14.1553 1.4115 14.2281 1.45987 14.3836 1.61538C14.5908 1.82258 14.6656 2.04763 14.6656 2.29615V13.6647C14.6649 13.6771 14.6646 13.6896 14.6646 13.7021C14.6646 13.9574 14.5632 14.2023 14.3826 14.3829C14.2021 14.5634 13.9572 14.6648 13.7018 14.6648H2.2959C2.04057 14.6648 1.79569 14.5634 1.61513 14.3829C1.43458 14.2023 1.33315 13.9574 1.33315 13.7021V2.29615C1.33315 2.04081 1.43458 1.79593 1.61513 1.61538ZM15.8381 14.5437C15.7237 14.834 15.5503 15.1008 15.3254 15.3257C14.8948 15.7563 14.3108 15.9982 13.7018 15.9982H2.2959C1.68694 15.9982 1.10293 15.7563 0.672325 15.3257C0.241725 14.8951 -0.000183105 14.311 -0.000183105 13.7021V2.29615C-0.000183105 1.68719 0.241725 1.10317 0.672325 0.672569C0.898314 0.44658 1.16656 0.272564 1.45849 0.158214C1.57473 0.0595667 1.72523 6.10352e-05 1.88963 6.10352e-05H2.2959H13.7029C14.0403 6.10352e-05 14.3458 0.0379688 14.6365 0.166421C14.924 0.293453 15.1376 0.483702 15.3265 0.672572C15.808 1.15413 15.999 1.72995 15.999 2.29615V14.1094C15.999 14.2753 15.9384 14.4271 15.8381 14.5437Z" />
+                                        </svg>
+                                        <svg class="svg2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.61532 1.61526C1.7958 1.43471 2.04051 1.33333 2.29562 1.33333H11.2545C11.6227 1.33333 11.9212 1.03486 11.9212 0.666667C11.9212 0.298477 11.6227 0 11.2545 0H2.29562C1.68671 0 1.10279 0.241993 0.672314 0.672654C0.241845 1.1033 6.10352e-05 1.68733 6.10352e-05 2.29624V13.7033C6.10352e-05 14.3122 0.241845 14.8962 0.672314 15.3269C1.10279 15.7575 1.68671 15.9995 2.29562 15.9995H13.6978C14.3067 15.9995 14.8907 15.7575 15.3211 15.3269C15.7516 14.8962 15.9934 14.3122 15.9934 13.7033V7.99976C15.9934 7.63157 15.6949 7.3331 15.3267 7.3331C14.9585 7.3331 14.6601 7.63157 14.6601 7.99976V13.7033C14.6601 13.9588 14.5586 14.2037 14.3781 14.3843C14.1977 14.5648 13.9529 14.6662 13.6978 14.6662H2.29562C2.04051 14.6662 1.7958 14.5648 1.61532 14.3843C1.43484 14.2037 1.33339 13.9588 1.33339 13.7033V2.29624C1.33339 2.04077 1.43484 1.79582 1.61532 1.61526ZM15.8167 1.9404C16.0699 1.6731 16.0585 1.25115 15.7912 0.997933C15.5239 0.74472 15.1019 0.756136 14.8487 1.02343L7.61408 8.66042L5.78248 6.72695C5.52927 6.45966 5.10732 6.44824 4.84002 6.70145C4.57272 6.95467 4.56131 7.37662 4.81452 7.64392L7.1301 10.0883C7.256 10.2212 7.43101 10.2965 7.61408 10.2965C7.79715 10.2965 7.97216 10.2212 8.09806 10.0883L15.8167 1.9404Z" />
+                                        </svg>
                                         <span class="control-label">джемы</span>
                                     </label>
                                 </li>
@@ -274,7 +301,8 @@
                     <ul class="products__catalog catalog-products__list">
                         <li class="catalog-products__card">
                             <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image" src="images/catalog/raspberry.png" alt="Малинка">
+                                <img class="products__catalog-image catalog-products__card-image"
+                                    src="images/catalog/raspberry.png" alt="Малинка">
                                 <h3 class=" catalog-products__card-title">Малинка</h3>
                                 <p class="catalog-products__card-subtitle">Сливочное мороженое с малиновым джемом</p>
                             </a>
@@ -282,14 +310,16 @@
                                 <b class="catalog-products__card-price">310 ₽/кг</b>
                                 <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
                                     <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                                     </svg>
                                 </a>
                             </div>
                         </li>
                         <li class="catalog-products__card">
                             <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image" src="images/catalog/pistachio.png" alt="Фисташка">
+                                <img class="products__catalog-image catalog-products__card-image"
+                                    src="images/catalog/pistachio.png" alt="Фисташка">
                                 <h3 class="catalog-products__card-title">Фисташка</h3>
                                 <p class="catalog-products__card-subtitle">Фисташковый пломбир с кусочками шоколада</p>
                             </a>
@@ -297,14 +327,16 @@
                                 <b class="catalog-products__card-price">340 ₽/кг</b>
                                 <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
                                     <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                                     </svg>
                                 </a>
                             </div>
                         </li>
                         <li class="catalog-products__card">
                             <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image" src="images/catalog/blueberry.png" alt="Черника">
+                                <img class="products__catalog-image catalog-products__card-image"
+                                    src="images/catalog/blueberry.png" alt="Черника">
                                 <h3 class="catalog-products__card-title">Черника</h3>
                                 <p class="catalog-products__card-subtitle">Крем-брюле
                                     с черничным джемом</p>
@@ -313,14 +345,16 @@
                                 <b class="catalog-products__card-price">330 ₽/кг</b>
                                 <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
                                     <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                                     </svg>
                                 </a>
                             </div>
                         </li>
                         <li class="catalog-products__card">
                             <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image" src="images/catalog/bubble-gum.png" alt="Бабл-гам">
+                                <img class="products__catalog-image catalog-products__card-image"
+                                    src="images/catalog/bubble-gum.png" alt="Бабл-гам">
                                 <h3 class="catalog-products__card-title">Бабл-гам</h3>
                                 <p class="catalog-products__card-subtitle">Ванильный пломбир
                                     со сладкой посыпкой</p>
@@ -329,14 +363,16 @@
                                 <b class="catalog-products__card-price">320 ₽/кг</b>
                                 <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
                                     <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                                     </svg>
                                 </a>
                             </div>
                         </li>
                         <li class="catalog-products__card">
                             <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image" src="images/catalog/blackberry.png" alt="Ежевика">
+                                <img class="products__catalog-image catalog-products__card-image"
+                                    src="images/catalog/blackberry.png" alt="Ежевика">
                                 <h3 class="catalog-products__card-title">Ежевика</h3>
                                 <p class="catalog-products__card-subtitle">Сливочное мороженое с ежевичным джемом</p>
                             </a>
@@ -344,14 +380,16 @@
                                 <b class="catalog-products__card-price">330 ₽/кг</b>
                                 <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
                                     <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                                     </svg>
                                 </a>
                             </div>
                         </li>
                         <li class="catalog-products__card">
                             <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image" src="images/catalog/banana.png" alt="Банан">
+                                <img class="products__catalog-image catalog-products__card-image"
+                                    src="images/catalog/banana.png" alt="Банан">
                                 <h3 class="catalog-products__card-title">Банан</h3>
                                 <p class="catalog-products__card-subtitle">Сливочный пломбир
                                     с банановым вкусом</p>
@@ -360,14 +398,16 @@
                                 <b class="catalog-products__card-price">340 ₽/кг</b>
                                 <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
                                     <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                                     </svg>
                                 </a>
                             </div>
                         </li>
                         <li class="catalog-products__card">
                             <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image" src="images/catalog/chocolate.png" alt="Шоколадка">
+                                <img class="products__catalog-image catalog-products__card-image"
+                                    src="images/catalog/chocolate.png" alt="Шоколадка">
                                 <h3 class="catalog-products__card-title">Шоколадка</h3>
                                 <p class="catalog-products__card-subtitle">Классический шоколадный пломбир</p>
                             </a>
@@ -375,14 +415,16 @@
                                 <b class="catalog-products__card-price">270 ₽/кг</b>
                                 <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
                                     <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                                     </svg>
                                 </a>
                             </div>
                         </li>
                         <li class="catalog-products__card">
                             <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image" src="images/catalog/strawberry.png" alt="Клубничка">
+                                <img class="products__catalog-image catalog-products__card-image"
+                                    src="images/catalog/strawberry.png" alt="Клубничка">
                                 <h3 class="catalog-products__card-title">Клубничка</h3>
                                 <p class="catalog-products__card-subtitle">Сливочный пломбир
                                     с клубничным вкусом</p>
@@ -391,14 +433,16 @@
                                 <b class="catalog-products__card-price">300 ₽/кг</b>
                                 <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
                                     <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                                     </svg>
                                 </a>
                             </div>
                         </li>
                         <li class="catalog-products__card">
                             <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image" src="images/catalog/lemon.png" alt="Лимон">
+                                <img class="products__catalog-image catalog-products__card-image"
+                                    src="images/catalog/lemon.png" alt="Лимон">
                                 <h3 class="catalog-products__card-title">Лимон</h3>
                                 <p class="catalog-products__card-subtitle">Освежающий лимонный сорбет</p>
                             </a>
@@ -406,14 +450,16 @@
                                 <b class="catalog-products__card-price">310 ₽/кг</b>
                                 <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
                                     <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                                     </svg>
                                 </a>
                             </div>
                         </li>
                         <li class="catalog-products__card">
                             <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image" src="images/catalog/menthol.png" alt="Ментол">
+                                <img class="products__catalog-image catalog-products__card-image"
+                                    src="images/catalog/menthol.png" alt="Ментол">
                                 <h3 class="catalog-products__card-title">Ментол</h3>
                                 <p class="catalog-products__card-subtitle">Сливочный пломбир
                                     с ментоловым сиропом</p>
@@ -422,14 +468,16 @@
                                 <b class="catalog-products__card-price">320 ₽/кг</b>
                                 <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
                                     <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                                     </svg>
                                 </a>
                             </div>
                         </li>
                         <li class="catalog-products__card">
                             <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image" src="images/catalog/nut.png" alt="Орешек">
+                                <img class="products__catalog-image catalog-products__card-image"
+                                    src="images/catalog/nut.png" alt="Орешек">
                                 <h3 class="catalog-products__card-title">Орешек</h3>
                                 <p class="catalog-products__card-subtitle">Фисташковый пломбир с шоколадным сиропом</p>
                             </a>
@@ -437,14 +485,16 @@
                                 <b class="catalog-products__card-price">360 ₽/кг</b>
                                 <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
                                     <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                                     </svg>
                                 </a>
                             </div>
                         </li>
                         <li class="catalog-products__card">
                             <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image" src="images/catalog/creme-brulee.png" alt="Крем-брюле">
+                                <img class="products__catalog-image catalog-products__card-image"
+                                    src="images/catalog/creme-brulee.png" alt="Крем-брюле">
                                 <h3 class="catalog-products__card-title">Крем-брюле</h3>
                                 <p class="catalog-products__card-subtitle">Классическое крем-брюле </p>
                             </a>
@@ -452,7 +502,8 @@
                                 <b class="catalog-products__card-price">280 ₽/кг</b>
                                 <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
                                     <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                                     </svg>
                                 </a>
                             </div>
@@ -494,44 +545,48 @@
             </main>
             <footer class="footer">
                 <div class="container footer__container">
-                  <div class="social">
-                    <ul class="footer__social-icons social-icons">
-                        <li><a class="social-icons-svg" href="https://web.telegram.org">
-                          <svg xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0ZM12.4 8.9a563.2 563.2 0 0 0-7.9 3.6c0 .4.5.5 1 .7l.3.1c.6.2 1.5.5 1.9.5.4 0 .8-.2 1.3-.5a123.2 123.2 0 0 1 5.3-3.3v.2a34 34 0 0 1-3.5 3.5c-.6.5-1 1 0 1.6l1.3.9a88.8 88.8 0 0 0 1.8 1.2c.5.4 1 .7 1.5.6.3 0 .6-.3.8-1.2a143 143 0 0 0 1.3-9.1l-.1-.3a.8.8 0 0 0-.5-.2c-.4 0-1.1.3-4.5 1.7Z"/>
-                          </svg></a>
-                        </li>
-                        <li><a class="social-icons-svg" href="https://vk.com">
-                          <svg xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.4 3h-.7s-1.6 0-3-1.2C7.4 12.4 6 9.6 6 9.6v-.2l.4-.1h2l.1.2.7 1.2c.7 1 1 1.3 1.3 1.2.3-.2.2-1.5.2-1.5s0-.5-.2-.7c-.1-.2-.4-.3-.5-.3 0 0 0-.2.3-.3l1.5-.1h.8c.5.2.5.5.4 1.1V11c0 .4 0 .8.2 1 .2 0 .5 0 1.3-1.3l.7-1.2.1-.2h2.1l.6.1c0 .3-.2.8-1 1.6-.7.9-1 1.2-1 1.4 0 .2.3.4.7.7l1.2 1.2c.4.6-.4.7-.4.7h-1.7l-.7-.2a4 4 0 0 1-.7-.6c-.4-.4-.7-.7-1-.6-.4.1-.4 1-.4 1v.2l-.4.2Z"/>
-                          </svg></a>
-                        </li>
-                        <li><a class="social-icons-svg" href="http://www.youtube.com">
-                          <svg xmlns="http://www.w3.org/2000/svg">
-                          <path d="m14 11.8-2.8-1.3c-.2-.1-.4 0-.4.3v2.4c0 .3.2.4.4.3l2.8-1.3c.2-.1.2-.3 0-.4ZM12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 16.9c-6.1 0-6.3-.6-6.3-4.9 0-4.3.2-4.9 6.3-4.9s6.3.6 6.3 4.9c0 4.3-.2 4.9-6.3 4.9Z"/>
-                          </svg></a>
-                        </li>
-                      </ul>
-                  </div>
-                  <div class="information">
-                    <ul>
-                      <li class="information__item">Для поставщиков</li>
-                      <li class="information__item">Наши документы</li>
-                      <li class="information__item">О производстве</li>
-                      <li class="information__item">Экологические стандарты</li>
-                    </ul>
-                  </div>
-                  <div class="html-academy">
-                    <div class="logo">
-                      <a href="https://htmlacademy.ru">
-                        <img src="images/logo-htmlacademy.svg" alt="Логотип html academy">
-                      </a>
-                      <p>Сделано в <span><a class="html-academy__link" href="https://htmlacademy.ru">.html academy</a></span> © 2021
-                      </p>
+                    <div class="social">
+                        <ul class="footer__social-icons social-icons">
+                            <li><a class="social-icons-svg" href="https://web.telegram.org">
+                                    <svg xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0ZM12.4 8.9a563.2 563.2 0 0 0-7.9 3.6c0 .4.5.5 1 .7l.3.1c.6.2 1.5.5 1.9.5.4 0 .8-.2 1.3-.5a123.2 123.2 0 0 1 5.3-3.3v.2a34 34 0 0 1-3.5 3.5c-.6.5-1 1 0 1.6l1.3.9a88.8 88.8 0 0 0 1.8 1.2c.5.4 1 .7 1.5.6.3 0 .6-.3.8-1.2a143 143 0 0 0 1.3-9.1l-.1-.3a.8.8 0 0 0-.5-.2c-.4 0-1.1.3-4.5 1.7Z" />
+                                    </svg></a>
+                            </li>
+                            <li><a class="social-icons-svg" href="https://vk.com">
+                                    <svg xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.4 3h-.7s-1.6 0-3-1.2C7.4 12.4 6 9.6 6 9.6v-.2l.4-.1h2l.1.2.7 1.2c.7 1 1 1.3 1.3 1.2.3-.2.2-1.5.2-1.5s0-.5-.2-.7c-.1-.2-.4-.3-.5-.3 0 0 0-.2.3-.3l1.5-.1h.8c.5.2.5.5.4 1.1V11c0 .4 0 .8.2 1 .2 0 .5 0 1.3-1.3l.7-1.2.1-.2h2.1l.6.1c0 .3-.2.8-1 1.6-.7.9-1 1.2-1 1.4 0 .2.3.4.7.7l1.2 1.2c.4.6-.4.7-.4.7h-1.7l-.7-.2a4 4 0 0 1-.7-.6c-.4-.4-.7-.7-1-.6-.4.1-.4 1-.4 1v.2l-.4.2Z" />
+                                    </svg></a>
+                            </li>
+                            <li><a class="social-icons-svg" href="http://www.youtube.com">
+                                    <svg xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14 11.8-2.8-1.3c-.2-.1-.4 0-.4.3v2.4c0 .3.2.4.4.3l2.8-1.3c.2-.1.2-.3 0-.4ZM12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 16.9c-6.1 0-6.3-.6-6.3-4.9 0-4.3.2-4.9 6.3-4.9s6.3.6 6.3 4.9c0 4.3-.2 4.9-6.3 4.9Z" />
+                                    </svg></a>
+                            </li>
+                        </ul>
                     </div>
-                  </div>
+                    <div class="information">
+                        <ul>
+                            <li class="information__item">Для поставщиков</li>
+                            <li class="information__item">Наши документы</li>
+                            <li class="information__item">О производстве</li>
+                            <li class="information__item">Экологические стандарты</li>
+                        </ul>
+                    </div>
+                    <div class="html-academy">
+                        <div class="logo">
+                            <a href="https://htmlacademy.ru">
+                                <img src="images/logo-htmlacademy.svg" alt="Логотип html academy">
+                            </a>
+                            <p>Сделано в <span><a class="html-academy__link" href="https://htmlacademy.ru">.html
+                                        academy</a></span> © 2021
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </footer>
+            </footer>
         </div>
     </body>
 
