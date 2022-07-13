@@ -96,6 +96,7 @@ body {
 
 .header__information {
     display: flex;
+    margin-top: 14px;
 }
 
 .header__information-phone {
