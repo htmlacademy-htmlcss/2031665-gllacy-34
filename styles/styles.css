@@ -81,10 +81,20 @@ body {
     list-style-type: none;
 }
 
+.header__menu-item a {
+    color: #2D3440;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 16px;
+    background-color: #FEAFC3;
+    border-radius: 30px;
+    border: 2px solid transparent;
+}
+
 .header__menu-item a:hover {
     background-color: rgba(252, 252, 252, 0.5);
     border-radius: 30px;
-    display: block;
     margin-top: -7px;
 }
 
@@ -95,17 +105,6 @@ body {
 .header__menu-item a:focus {
     background-color: rgba(252, 252, 252, 0.5);
     border: 2px solid #2d3440;
-}
-
-.header__menu-item a {
-    color: #2D3440;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 20px;
-    padding: 8px 16px;
-    background-color: #FEAFC3;
-    border-radius: 30px;
-    border: 2px solid transparent;
 }
 
 .header__information {
@@ -557,6 +556,7 @@ body {
     background-color: rgba(252, 252, 252, 0.3);
     border-radius: 100px;
     margin-right: 8px;
+    border: 1px solid transparent;
 }
 
 .dot:hover {
@@ -1311,12 +1311,43 @@ body {
 
 .subcatalog {
     display: none;
-    z-index: 33;
+}
+
+.subcatalog-link-container{
+    background-color: #FCFCFC;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.subcatalog-link-container a{
+    background-color: #FCFCFC;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.subcatalog .subcatalog-link-main {
+    font-weight: 700;
+}
+
+.subcatalog .subcatalog-link-container:first-child {
+    border-bottom: 1px solid #B9B9B9;
+    padding-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .header__menu-item-catalog:hover ~ .subcatalog {
-    display: block;
     position: absolute;
+    z-index: 3;
+    list-style-type: none;
+    padding: 16px 13px 5px 16px;
+    background: #FCFCFC;
+    box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+    border-radius: 4px;
+    margin-top: 9.14px;
+    display: flex;
+    flex-direction: column;
 }
 
 .inner-header {
