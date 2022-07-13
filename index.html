@@ -18,7 +18,7 @@
             </div>
             <nav class="header__menu header__menu-catalog">
                 <li class="header__menu-item">
-                    <a href="catalog.html">Каталог</a>
+                    <a class="header__menu-item-catalog" href="catalog.html">Каталог</a>
                     <ul class="subcatalog">
                       <li><a href="#">Новинки</a></li>
                       <li><a href="#">Сливочное</a></li>
@@ -47,6 +47,13 @@
                     </svg>
                     <span class="visually-hidden"> Поиск </span>
                   </a>
+                  <div class="popover popover-cart popover-search">
+                    <div class="popover-content popover-content-search">
+                      <form>
+                        <input class="search-input"  type="text" name="text" class="search" placeholder="Поиск по сайту">
+                      </form>
+                    </div>
+                  </div>
               </li>
               <li class="icon__item">
                 <a class="icon__link" href="#">
@@ -55,9 +62,33 @@
                   </svg>
                   <span> Вход </span>
                 </a>
+                <div class="popover popover-cart popover-entry">
+                  <div class="popover-content">
+                      <h2 class="popover-title">Личный кабинет</h2>
+                      <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                          <p class="field-group field-group-entry">
+                              <label class="visually-hidden"  for="email"></label>
+                              <input class="auth-form-field field" type="email" id="fname" name="email" placeholder="email@example.com">
+                          </p>
+                          <p class="field-group field-group-entry">
+                            <label class="visually-hidden" for="auth-password">Пароль</label>
+                            <input class="auth-form-field field" type="password" id="auth-password" name="auth-password" placeholder="·····">
+                          </p>
+                          <div class="auth-form__container">
+                              <button class="button pink-button auth-form-button" type="submit">Войти</button>
+                              <p class="field-group auth-form-user-options">
+                                  <label class="auth-form-checkbox control">
+                                  </label>
+                                  <a class="auth-form-recovery" href="#">Забыли пароль?</a>
+                                  <a class="auth-form-recovery" href="#">Регистрация</a>
+                              </p>
+                          </div>
+                      </form>
+                  </div>
+                </div>
               </li>
               <li class="icon__item">
-                <a class="icon__link icon__link--active" href="#">
+                <a class="icon__link" href="#">
                   <svg aria-hidden="true" focusable="false" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"></path>
                   </svg>
@@ -95,6 +126,11 @@
                       </div>
                   </div>
                 </div>
+                <div class="popover popover-cart-empty">
+                  <div class="popover-content popover-content-empty">
+                      <h2 class="popover-title">Ваша корзина пока пуста</h2>
+                  </div>
+                </div>
               </li>
             </ul>
           </ul>
@@ -102,35 +138,37 @@
       <main class="main">
         <div class="slider">
           <div class="slider__ice">
-            <div class="slider__information">
+            <div class="slider__information slider__information-main">
               <div class="slider__information-container">
                 <h1 class="slider__information-title">Нежный пломбир <br> с клубничным джемом</h1>
                 <p class="slider__information-subtitle">Натуральное мороженое из свежих сливок
                   и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
                 <button class="button white-button">Заказать</button>
               </div>
-              <img src="images/strawberry-ice.png" alt="Клубничное мороженое">
+              <img class="slider-image-main" src="images/strawberry-ice.png" alt="Клубничное мороженое">
             </div>
-            <div class="slider__information">
-              <div class="slider__information-container">
-                <h1 class="slider__information-title">Сливочное мороженое со вкусом банана</h1>
-                <p class="slider__information-subtitle">Сливочное мороженое с ярким банановым вкусом подарит вам
-                  свежесть и наслаждение даже в самый жаркий
-                  летний
-                  день. </p>
-                <button class="button white-button">Заказать</button>
+            <div class="slider__ice-container">
+              <div class="slider__information">
+                <div class="slider__information-container">
+                  <h1 class="slider__information-title">Сливочное мороженое со вкусом банана</h1>
+                  <p class="slider__information-subtitle">Сливочное мороженое с ярким банановым вкусом подарит вам
+                    свежесть и наслаждение даже в самый жаркий
+                    летний
+                    день. </p>
+                  <button class="button white-button">Заказать</button>
+                </div>
+                <img class="slider-image" src="images/banana-ice.png" alt="Банановое мороженое">
               </div>
-              <img src="images/banana-ice.png" alt="Банановое мороженое">
-            </div>
-            <div class="slider__information">
-              <div class="slider__information-container">
-                <h1 class="slider__information-title">Карамельный пломбир с маршмеллоу</h1>
-                <p class="slider__information-subtitle">Необычный сладкий десерт с карамельным топпингом и кусочками
-                  зефира завоюет сердца сладкоежек всех
-                  возрастов.</p>
-                <button class="button white-button">Заказать</button>
+              <div class="slider__information">
+                <div class="slider__information-container">
+                  <h1 class="slider__information-title">Карамельный пломбир с маршмеллоу</h1>
+                  <p class="slider__information-subtitle">Необычный сладкий десерт с карамельным топпингом и кусочками
+                    зефира завоюет сердца сладкоежек всех
+                    возрастов.</p>
+                  <button class="button white-button">Заказать</button>
+                </div>
+                <img class="slider-image" src="images/caramel-ice.png" alt="Карамельное мороженое">
               </div>
-              <img src="images/caramel-ice.png" alt="Карамельное мороженое">
             </div>
           </div>
           <div class="arrows">
