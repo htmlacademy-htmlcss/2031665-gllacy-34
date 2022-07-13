@@ -18,7 +18,7 @@
             </div>
             <nav class="header__menu header__menu-catalog">
                 <li class="header__menu-item">
-                    <a href="catalog.html">Каталог</a>
+                    <a class="header__menu-item-catalog" href="catalog.html">Каталог</a>
                     <ul class="subcatalog">
                       <li><a href="#">Новинки</a></li>
                       <li><a href="#">Сливочное</a></li>
@@ -46,15 +46,14 @@
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66329 6.18799C1.66329 3.61066 3.75263 1.52132 6.32996 1.52132C8.90729 1.52132 10.9966 3.61066 10.9966 6.18799C10.9966 7.44526 10.4994 8.58641 9.69093 9.42554C9.66808 9.44309 9.64612 9.46234 9.62519 9.48326C9.60427 9.50418 9.58503 9.52614 9.56748 9.54898C8.72835 10.3575 7.58722 10.8547 6.32996 10.8547C3.75263 10.8547 1.66329 8.76532 1.66329 6.18799ZM10.0751 10.8759C9.04862 11.697 7.74662 12.188 6.32996 12.188C3.01625 12.188 0.329956 9.5017 0.329956 6.18799C0.329956 2.87428 3.01625 0.187988 6.32996 0.187988C9.64367 0.187988 12.33 2.87428 12.33 6.18799C12.33 7.60467 11.839 8.90668 11.0179 9.93313L13.468 12.3833C13.7284 12.6436 13.7284 13.0657 13.468 13.3261C13.2077 13.5864 12.7855 13.5864 12.5252 13.3261L10.0751 10.8759Z" fill="#2D3440"/>
                     </svg>
                     <span class="visually-hidden"> Поиск </span>
-                    <div class="popover popover-cart popover-search">
-                      <div class="popover-content popover-content-search">
-                        <form>
-                          <input class="search-input"  type="text" name="text" class="search" placeholder="Поиск по сайту">
-                        </form>
-                      </div>
-                    </div>
-
                   </a>
+                  <div class="popover popover-cart popover-search">
+                    <div class="popover-content popover-content-search">
+                      <form>
+                        <input class="search-input"  type="text" name="text" class="search" placeholder="Поиск по сайту">
+                      </form>
+                    </div>
+                  </div>
               </li>
               <li class="icon__item">
                 <a class="icon__link" href="#">
@@ -89,7 +88,7 @@
                 </div>
               </li>
               <li class="icon__item">
-                <a class="icon__link icon__link--active" href="#">
+                <a class="icon__link" href="#">
                   <svg aria-hidden="true" focusable="false" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"></path>
                   </svg>
@@ -139,35 +138,37 @@
       <main class="main">
         <div class="slider">
           <div class="slider__ice">
-            <div class="slider__information">
+            <div class="slider__information slider__information-main">
               <div class="slider__information-container">
                 <h1 class="slider__information-title">Нежный пломбир <br> с клубничным джемом</h1>
                 <p class="slider__information-subtitle">Натуральное мороженое из свежих сливок
                   и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
                 <button class="button white-button">Заказать</button>
               </div>
-              <img src="images/strawberry-ice.png" alt="Клубничное мороженое">
+              <img class="slider-image-main" src="images/strawberry-ice.png" alt="Клубничное мороженое">
             </div>
-            <div class="slider__information">
-              <div class="slider__information-container">
-                <h1 class="slider__information-title">Сливочное мороженое со вкусом банана</h1>
-                <p class="slider__information-subtitle">Сливочное мороженое с ярким банановым вкусом подарит вам
-                  свежесть и наслаждение даже в самый жаркий
-                  летний
-                  день. </p>
-                <button class="button white-button">Заказать</button>
+            <div class="slider__ice-container">
+              <div class="slider__information">
+                <div class="slider__information-container">
+                  <h1 class="slider__information-title">Сливочное мороженое со вкусом банана</h1>
+                  <p class="slider__information-subtitle">Сливочное мороженое с ярким банановым вкусом подарит вам
+                    свежесть и наслаждение даже в самый жаркий
+                    летний
+                    день. </p>
+                  <button class="button white-button">Заказать</button>
+                </div>
+                <img class="slider-image" src="images/banana-ice.png" alt="Банановое мороженое">
               </div>
-              <img src="images/banana-ice.png" alt="Банановое мороженое">
-            </div>
-            <div class="slider__information">
-              <div class="slider__information-container">
-                <h1 class="slider__information-title">Карамельный пломбир с маршмеллоу</h1>
-                <p class="slider__information-subtitle">Необычный сладкий десерт с карамельным топпингом и кусочками
-                  зефира завоюет сердца сладкоежек всех
-                  возрастов.</p>
-                <button class="button white-button">Заказать</button>
+              <div class="slider__information">
+                <div class="slider__information-container">
+                  <h1 class="slider__information-title">Карамельный пломбир с маршмеллоу</h1>
+                  <p class="slider__information-subtitle">Необычный сладкий десерт с карамельным топпингом и кусочками
+                    зефира завоюет сердца сладкоежек всех
+                    возрастов.</p>
+                  <button class="button white-button">Заказать</button>
+                </div>
+                <img class="slider-image" src="images/caramel-ice.png" alt="Карамельное мороженое">
               </div>
-              <img src="images/caramel-ice.png" alt="Карамельное мороженое">
             </div>
           </div>
           <div class="arrows">
