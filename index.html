@@ -13,20 +13,23 @@
       <header class="header">
         <div class="header__container">
           <div class="header__logo">
-            <a href="#">
+            <a>
               <img src="images/main-logo.svg" alt="Логотип Gllacy Shop.">
             </a>
           </div>
           <ul class="header__menu">
             <li class="header__menu-item">
               <a class="header__menu-item-catalog" href="catalog.html">Каталог</a>
-              <ul class="subcatalog">
-                <li class="subcatalog-link-container"><a class="subcatalog-link subcatalog-link-main" href="#">Новинки</a></li>
-                <li class="subcatalog-link-container"><a class="subcatalog-link"  href="#">Сливочное</a></li>
-                <li class="subcatalog-link-container"><a class="subcatalog-link"  href="#">Щербеты</a></li>
-                <li class="subcatalog-link-container"><a class="subcatalog-link"  href="#">Фруктовый лед</a></li>
-                <li class="subcatalog-link-container"><a class="subcatalog-link"  href="#">Мелорин</a></li>
-              </ul>
+              <div class="header__menu-subcatalog">
+                <ul class="subcatalog">
+                  <li class="subcatalog-link-container"><a class="subcatalog-link subcatalog-link-main"
+                      href="#">Новинки</a></li>
+                  <li class="subcatalog-link-container"><a class="subcatalog-link" href="#">Сливочное</a></li>
+                  <li class="subcatalog-link-container"><a class="subcatalog-link" href="#">Щербеты</a></li>
+                  <li class="subcatalog-link-container"><a class="subcatalog-link" href="#">Фруктовый лед</a></li>
+                  <li class="subcatalog-link-container"><a class="subcatalog-link" href="#">Мелорин</a></li>
+                </ul>
+              </div>
             </li>
             <li class="header__menu-item">
               <a href="#">Доставка и оплата</a>
@@ -52,8 +55,10 @@
               </a>
               <div class="popover popover-cart popover-search">
                 <div class="popover-content popover-content-search">
-                  <form>
-                    <input class="search search-input" type="text" name="text" placeholder="Поиск по сайту">
+                  <form action="https://echo.htmlacademy.ru/">
+                    <label for="site-search"></label>
+                    <input class="search search-input" id="site-search" type="search" name="search"
+                      placeholder="Поиск по сайту">
                   </form>
                 </div>
               </div>
@@ -68,7 +73,7 @@
                 </svg>
                 <span> Вход </span>
               </a>
-              <div class="popover popover-cart popover-entry">
+              <div class="popover  popover-cart popover-entry">
                 <div class="popover-content">
                   <h2 class="popover-title">Личный кабинет</h2>
                   <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -106,7 +111,7 @@
                 <span class="icon__link-count"> 2 </span>
                 <span>товара</span>
               </a>
-              <div class="popover popover-cart">
+              <div class="popover popover-cart popover-cart-trash">
                 <div class="popover-content">
                   <h2 class="popover-title">Корзина</h2>
                   <ul class="cart-items-list">
@@ -137,7 +142,7 @@
                   </div>
                 </div>
               </div>
-              <div class="popover popover-cart-empty">
+              <div class="popover visually-hidden popover-cart-empty">
                 <div class="popover-content popover-content-empty">
                   <h2 class="popover-title">Ваша корзина пока пуста</h2>
                 </div>
@@ -461,10 +466,10 @@
         </div>
         <div class="information information-main">
           <ul>
-            <li class="information__item">Для поставщиков</li>
-            <li class="information__item">Наши документы</li>
-            <li class="information__item">О производстве</li>
-            <li class="information__item">Экологические стандарты</li>
+            <li class="information__item"><a href="#">Для поставщиков</a></li>
+            <li class="information__item"><a href="#">Наши документы</a></li>
+            <li class="information__item"><a href="#">О производстве</a></li>
+            <li class="information__item"><a href="#">Экологические стандарты</a></li>
           </ul>
         </div>
         <div class="html-academy html-academy-main">
