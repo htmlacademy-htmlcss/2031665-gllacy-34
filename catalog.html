@@ -105,6 +105,7 @@
                             <div class="popover popover-cart">
                                 <div class="popover-content">
                                     <h2 class="popover-title">Корзина</h2>
+
                                     <ul class="cart-items-list">
                                         <li class="cart-item">
                                             <img src="images/catalog/raspberry.jpg" alt="raspberry.">
@@ -299,16 +300,16 @@
                         <button class="button transparent-button catalog-products__form-button"
                             type="submit">Применить</button>
                     </form>
-                    <ul class="products__catalog catalog-products__list">
+                    <div class="popover-content">
+                        <ul class="products__catalog catalog-products__list"></ul>
+                    </div>
+                    <template id="products-template">
                         <li class="catalog-products__card">
-                            <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image"
-                                    src="images/catalog/raspberry.png" alt="Малинка.">
-                                <h3 class=" catalog-products__card-title">Малинка</h3>
-                                <p class="catalog-products__card-subtitle">Сливочное мороженое с малиновым джемом</p>
-                            </a>
+                            <img class="products__catalog-image catalog-products__card-image" alt="фотография церкви" />
+                            <h2 class="catalog-products__card-title"></h2>
+                            <p class="catalog-products__card-subtitle"></p>
                             <div class="products__catalog-items">
-                                <b class="catalog-products__card-price">310 ₽/кг</b>
+                                <b class="catalog-products__card-price"></b>
                                 <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
                                     <svg xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -317,199 +318,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="catalog-products__card">
-                            <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image"
-                                    src="images/catalog/pistachio.png" alt="Фисташка.">
-                                <h3 class="catalog-products__card-title">Фисташка</h3>
-                                <p class="catalog-products__card-subtitle">Фисташковый пломбир с кусочками шоколада</p>
-                            </a>
-                            <div class="products__catalog-items">
-                                <b class="catalog-products__card-price">340 ₽/кг</b>
-                                <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
-                                    <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="catalog-products__card">
-                            <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image"
-                                    src="images/catalog/blueberry.png" alt="Черника.">
-                                <h3 class="catalog-products__card-title">Черника</h3>
-                                <p class="catalog-products__card-subtitle">Крем-брюле
-                                    с черничным джемом</p>
-                            </a>
-                            <div class="products__catalog-items">
-                                <b class="catalog-products__card-price">330 ₽/кг</b>
-                                <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
-                                    <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="catalog-products__card">
-                            <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image"
-                                    src="images/catalog/bubble-gum.png" alt="Бабл-гам.">
-                                <h3 class="catalog-products__card-title">Бабл-гам</h3>
-                                <p class="catalog-products__card-subtitle">Ванильный пломбир
-                                    со сладкой посыпкой</p>
-                            </a>
-                            <div class="products__catalog-items">
-                                <b class="catalog-products__card-price">320 ₽/кг</b>
-                                <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
-                                    <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="catalog-products__card">
-                            <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image"
-                                    src="images/catalog/blackberry.png" alt="Ежевика.">
-                                <h3 class="catalog-products__card-title">Ежевика</h3>
-                                <p class="catalog-products__card-subtitle">Сливочное мороженое с ежевичным джемом</p>
-                            </a>
-                            <div class="products__catalog-items">
-                                <b class="catalog-products__card-price">330 ₽/кг</b>
-                                <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
-                                    <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="catalog-products__card">
-                            <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image"
-                                    src="images/catalog/banana.png" alt="Банан.">
-                                <h3 class="catalog-products__card-title">Банан</h3>
-                                <p class="catalog-products__card-subtitle">Сливочный пломбир
-                                    с банановым вкусом</p>
-                            </a>
-                            <div class="products__catalog-items">
-                                <b class="catalog-products__card-price">340 ₽/кг</b>
-                                <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
-                                    <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="catalog-products__card">
-                            <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image"
-                                    src="images/catalog/chocolate.png" alt="Шоколадка.">
-                                <h3 class="catalog-products__card-title">Шоколадка</h3>
-                                <p class="catalog-products__card-subtitle">Классический шоколадный пломбир</p>
-                            </a>
-                            <div class="products__catalog-items">
-                                <b class="catalog-products__card-price">270 ₽/кг</b>
-                                <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
-                                    <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="catalog-products__card">
-                            <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image"
-                                    src="images/catalog/strawberry.png" alt="Клубничка.">
-                                <h3 class="catalog-products__card-title">Клубничка</h3>
-                                <p class="catalog-products__card-subtitle">Сливочный пломбир
-                                    с клубничным вкусом</p>
-                            </a>
-                            <div class="products__catalog-items">
-                                <b class="catalog-products__card-price">300 ₽/кг</b>
-                                <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
-                                    <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="catalog-products__card">
-                            <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image"
-                                    src="images/catalog/lemon.png" alt="Лимон.">
-                                <h3 class="catalog-products__card-title">Лимон</h3>
-                                <p class="catalog-products__card-subtitle">Освежающий лимонный сорбет</p>
-                            </a>
-                            <div class="products__catalog-items">
-                                <b class="catalog-products__card-price">310 ₽/кг</b>
-                                <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
-                                    <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="catalog-products__card">
-                            <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image"
-                                    src="images/catalog/menthol.png" alt="Ментол.">
-                                <h3 class="catalog-products__card-title">Ментол</h3>
-                                <p class="catalog-products__card-subtitle">Сливочный пломбир
-                                    с ментоловым сиропом</p>
-                            </a>
-                            <div class="products__catalog-items">
-                                <b class="catalog-products__card-price">320 ₽/кг</b>
-                                <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
-                                    <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="catalog-products__card">
-                            <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image"
-                                    src="images/catalog/nut.png" alt="Орешек.">
-                                <h3 class="catalog-products__card-title">Орешек</h3>
-                                <p class="catalog-products__card-subtitle">Фисташковый пломбир с шоколадным сиропом</p>
-                            </a>
-                            <div class="products__catalog-items">
-                                <b class="catalog-products__card-price">360 ₽/кг</b>
-                                <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
-                                    <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="catalog-products__card">
-                            <a class="catalog-products__card-link" href="#">
-                                <img class="products__catalog-image catalog-products__card-image"
-                                    src="images/catalog/creme-brulee.png" alt="Крем-брюле.">
-                                <h3 class="catalog-products__card-title">Крем-брюле</h3>
-                                <p class="catalog-products__card-subtitle">Классическое крем-брюле </p>
-                            </a>
-                            <div class="products__catalog-items">
-                                <b class="catalog-products__card-price">280 ₽/кг</b>
-                                <a href="#" class="catalog-products__trash products__catalog-trash products__trash">
-                                    <svg xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+                    </template>
                     <div class="pagination__container">
                         <button class="button pagination-show-more white-button" type="button">Показать ещё</button>
                         <ul class="pagination">
@@ -590,5 +399,6 @@
             </footer>
         </div>
     </body>
+    <script src="components/index.js"></script>
 
 </html>

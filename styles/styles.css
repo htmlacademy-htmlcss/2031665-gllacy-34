@@ -47,29 +47,35 @@ body {
     width: 1170px;
 }
 
-.header {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.grid-element__image {
+    width: 150px;
+    height: 150px;
+    display: block;
+  }
+
+  .grid-element {
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
+    flex-direction: column;
+  }
+
+.header {
+    display: flex;
     justify-content: space-between;
     margin-bottom: 37.14px;
 }
 
 .header__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
-.header__menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.header__menu{
+    display: flex;
+}
+
+.header__menu-catalog {
     display: flex;
     flex-wrap: wrap;
     max-width: 500px;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 0;
     margin-top: 17px;
