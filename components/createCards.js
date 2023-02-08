@@ -1,14 +1,22 @@
 
 const tenCardElements = [];
 
-fetch("http://localhost:3001/products")
-.then(response => response.json())
-.then(function createMarker(cards = tenCardElements) {
-    for (let i = 0; i < cards.length; i++) {
-      renderCard(cards[i]);
-    }
-})
-.catch(error => console.error(error));
+function chooseWayToAddCards(){
+
+}
+
+
+function addCardsOnPageFromLocalHost(){
+    fetch("http://localhost:3001/products")
+    .then(response => response.json())
+    .then(function createMarker(cards = tenCardElements) {
+        for (let i = 0; i < cards.length; i++) {
+          renderCard(cards[i]);
+        }
+    })
+    .catch(error => console.error(error));
+}
+
 
 
 
@@ -91,18 +99,18 @@ const initialCards = [
 const placesContainer = document.querySelector(".products__catalog");
 const placeTemplate = document.querySelector("#products-template").content;
 
-const placeInfo = initialCards.map(function (item) {
-    return {
-        name: item.name,
-        link: item.link,
-        subtitle: item.subtitle,
-        price: item.price
-    };
-});
+// const placeInfo = initialCards.map(function (item) {
+//     return {
+//         name: item.name,
+//         link: item.link,
+//         subtitle: item.subtitle,
+//         price: item.price
+//     };
+// });
 
-function render() {
-    placeInfo.forEach(renderCard);
-}
+// function render() {
+//     placeInfo.forEach(renderCard);
+// }
 
 function renderCard({ name, link, subtitle, price }) {
     const placeElement = placeTemplate.querySelector(".catalog-products__card").cloneNode(true);
@@ -114,4 +122,5 @@ function renderCard({ name, link, subtitle, price }) {
     placesContainer.prepend(placeElement);
 }
 
-render();
+// render();
+addCardsOnPageFromLocalHost();
