@@ -9,31 +9,34 @@ function chooseWayToAddCards(){
 function addCardsOnPageFromLocalHost(){
     fetch("http://localhost:3001/products")
     .then(response => response.json())
-    .then(function createMarker(cards = tenCardElements) {
-        for (let i = 0; i < cards.length; i++) {
-          renderCard(cards[i]);
+    .then(data => renderCards(data))
+    .catch(
+        error => {
+            console.error(error);
+            renderCards(initialCards);
         }
-    })
-    .catch(error => console.error(error));
+        );
 }
 
-
-
-
+function renderCards(cards = tenCardElements) {
+    for (let i = 0; i < cards.length; i++) {
+        renderCard(cards[i]);
+      }
+}
 
 const initialCards = [
-//     {
-//         name: "Малинка",
-//         link: "images/catalog/raspberry.png",
-//         subtitle: "Сливочное мороженое с малиновым джемом",
-//         price: "310 ₽/кг"
-//     },
-//     {
-//         name: "Фисташка",
-//         link: "images/catalog/pistachio.png",
-//         subtitle: "Фисташковый пломбир с кусочками шоколада",
-//         price: "340 ₽/кг"
-//     },
+    {
+        name: "Малинка",
+        link: "images/catalog/raspberry.png",
+        subtitle: "Сливочное мороженое с малиновым джемом",
+        price: "310 ₽/кг"
+    },
+    {
+        name: "Фисташка",
+        link: "images/catalog/pistachio.png",
+        subtitle: "Фисташковый пломбир с кусочками шоколада",
+        price: "340 ₽/кг"
+    },
 //     {
 //         name: "Черника",
 //         link: "images/catalog/blueberry.png",
